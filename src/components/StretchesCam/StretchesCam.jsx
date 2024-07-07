@@ -61,7 +61,7 @@ const StretchesCam = () => {
         p.translate(video.width, 0);
         p.scale(-1, 1);
         p.image(video, 0, 0, video.width, video.height);
-
+        // specifies stoke of pose lines
         if (pose) {
           for (let i = 0; i < skeleton.length; i++) {
             let a = skeleton[i][0];
