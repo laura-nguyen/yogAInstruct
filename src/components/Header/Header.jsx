@@ -31,10 +31,8 @@ const Header = () => {
             </svg>
           </label>
 
-          <a href="about.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="blog.html">Blog</a>
-          <a href="login.html">Login</a>
+          <a href="about.html">Poses</a>
+          <a href="login.html">Start Session</a>
         </div>
       </nav>
     </header>
