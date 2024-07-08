@@ -212,7 +212,7 @@ Response:
 - Deploy the client and server to a production environment.
 - Ensure that all components are fully functional and accessible.
 
-### Nice-to-haves
+## Nice-to-haves
 - **Social Sharing**: Allow users to share their achievements on social media.
 - **Additional Exercises**: Add more exercises, such as push-ups or full-body workouts.
 - **User Profile**: View and edit personal information, set fitness goals, view session history.
