@@ -2,34 +2,6 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
-.regular {
-  font-weight: 400;
-}
-
-.medium {
-  font-weight: 500;
-}
-
-.black {
-  font-weight: 900;
-}
-
-.semi-bold {
-  font-weight: 600;
-}
-
-.extra-bold {
-  font-weight: 800;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.extra-light {
-  font-weight: 200;
-}
-
 .circle-text {
   border-radius: 10px;
   border-color: $black !important;
@@ -46,12 +18,13 @@
   display: flex;
   align-items: center;
   @include tablet {
-    margin: 3rem 2.25rem;
+    padding: 3rem 3rem;
   }
   @include desktop {
-    height: 40vh;
+    height: 50vh;
     max-width: 80rem;
-    margin: 2.25rem auto;
+    padding: 0 8rem;
+    margin: 0 auto;
   }
 }
 
@@ -62,15 +35,6 @@
 .main__img {
   width: 20vw;
   height: auto;
-}
-
-.main {
-  @include tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2.25rem;
-  }
 }
 
 .main__cta-links {
@@ -88,25 +52,26 @@
 
   @include desktop {
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
+}
+
+.about__header {
+  text-align: center;
 }
 
 .main__img {
   width: 50px;
   height: auto;
   padding: 0.5rem;
-}
 
-.value-props {
-  margin: 1rem;
   @include tablet {
-    margin: 3rem 2.25rem;
+    width: 70px;
   }
 
   @include desktop {
-    max-width: 80rem;
-    margin: 0 auto;
+    width: 100px;
+    padding: 1rem;
   }
 }
 
@@ -125,4 +90,11 @@
 .about__card {
   //   border-radius: 25px;
   //   border: $black 2px solid;
+  @include tablet {
+    width: 30vw;
+  }
+
+  @include desktop {
+    width: 25rem;
+  }
 }

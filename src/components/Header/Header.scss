@@ -14,12 +14,12 @@ header {
   @include tablet {
     font-size: 20px;
     height: 8rem;
-    padding: 0 1rem;
+    padding: 0 3rem;
   }
   @include desktop {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 8rem;
   }
 }
 

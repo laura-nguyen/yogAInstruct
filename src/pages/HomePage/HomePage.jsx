@@ -26,7 +26,7 @@ const HomePage = () => {
       </main>
 
       <section className="about">
-        <h2>Personal guidance at your convenience</h2>
+        <h2 className="about__header">Personal Guidance at Your Convenience</h2>
         <ul className="about__list">
           <li className="about__card">
             <img
@@ -58,7 +58,7 @@ const HomePage = () => {
               src={likeIcon}
               alt="like with text bubbles icon"
             />
-            <h4>Instant Feedback</h4>
+            <h4>Get Instant Feedback</h4>
             <p>
               Experience guided sessions with instant feedback, powered by AI,
               to improve your posture and overall well-being right from your
@@ -67,30 +67,6 @@ const HomePage = () => {
           </li>
         </ul>
       </section>
-
-      <h1 className="bold">
-        H1 The quick brown fox jumps over the lazy dog Bold{" "}
-      </h1>
-      <h2 className="semi-bold">
-        H2 The quick brown fox jumps over the lazy dog SemiBold
-      </h2>
-      <h3 className="medium">
-        H3 The quick brown fox jumps over the lazy dog Medium
-      </h3>
-      <h4 className="medium">
-        H4 The quick brown fox jumps over the lazy dog medium
-      </h4>
-      <h5 className="medium">
-        H5 The quick brown fox jumps over the lazy dog medium
-      </h5>
-
-      <p className="regular">
-        p The quick brown fox jumps over the lazy dog Regular
-      </p>
-      <p className="extra-light">
-        p The quick brown fox jumps over the lazy dog Extra Light
-      </p>
-      <button>Button The quick brown fox jumps over the lazy dog</button>
     </>
   );
 };

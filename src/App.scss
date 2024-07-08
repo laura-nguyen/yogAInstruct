@@ -28,8 +28,8 @@ h1 {
   font-weight: 700;
 
   @include tablet {
-    font-size: 4rem;
-    line-height: 7rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -37,10 +37,12 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
+  font-style: italic;
   // line-height: 2rem;
 
   @include tablet {
-    font-size: 3.75rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
     // line-height: 2.75rem;
   }
 }
@@ -62,8 +64,9 @@ h4 {
   font-weight: 600;
 
   @include tablet {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -80,7 +83,6 @@ h5 {
 
   @include tablet {
     font-size: 1rem;
-    line-height: 2.75rem;
   }
 }
 
@@ -88,9 +90,10 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
+  font-weight: 400;
 
   @include tablet {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
