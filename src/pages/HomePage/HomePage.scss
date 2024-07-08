@@ -95,17 +95,17 @@
 }
 
 .main__img {
-  width: 50px;
-  height: auto;
+  width: 100%;
   padding: 0.5rem;
+  font-size: 30px;
 
   @include tablet {
-    width: 70px;
+    font-size: 40px;
   }
 
   @include desktop {
-    width: 100px;
     padding: 1rem;
+    font-size: 50px;
   }
 }
 
@@ -124,6 +124,7 @@
 .about__card {
   //   border-radius: 25px;
   //   border: $black 2px solid;
+
   @include tablet {
     width: 30vw;
   }

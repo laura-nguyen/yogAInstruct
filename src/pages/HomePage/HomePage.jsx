@@ -1,8 +1,4 @@
 import "./HomePage.scss";
-import heroImage from "./../../assets/images/warrior ii.jpeg";
-import ideaIcon from "./../../assets/images/idea.png";
-import hourglassIcon from "./../../assets/images/hourglass.png";
-import likeIcon from "./../../assets/images/like.png";
 import { useEffect } from "react";
 
 const HomePage = () => {
@@ -67,11 +63,8 @@ const HomePage = () => {
         <h2 className="about__header">Personal Guidance at Your Convenience</h2>
         <ul className="about__list">
           <li className="about__card">
-            <img
-              className="main__img"
-              src={ideaIcon}
-              alt="icon of a lightblub floating on a book"
-            />
+            <div className="main__img">📚</div>
+
             <h4>Learn Beginner Poses</h4>
             <p>
               Our app guides you through beginner yoga poses and educates you on
@@ -79,11 +72,8 @@ const HomePage = () => {
             </p>
           </li>
           <li className="about__card">
-            <img
-              className="main__img"
-              src={hourglassIcon}
-              alt="hourglass icon"
-            />
+            <div className="main__img">⏳</div>
+
             <h4>Real-Time Countdown Timer</h4>
             <p>
               Hold each pose for the perfect duration with our real-time
@@ -91,11 +81,8 @@ const HomePage = () => {
             </p>
           </li>
           <li className="about__card">
-            <img
-              className="main__img"
-              src={likeIcon}
-              alt="like with text bubbles icon"
-            />
+            <div className="main__img">✅</div>
+
             <h4>Get Instant Feedback</h4>
             <p>
               Experience guided sessions with instant feedback, powered by AI,
