@@ -1,5 +1,4 @@
-# Project Title
-Yoga AI
+# Yoga AI
 
 ## Overview
 
@@ -60,13 +59,19 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 ### Mockups
 
 #### Home Page
-![](home.png)
+<img width="600" alt="Screenshot 2024-07-07 at 11 39 30 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/2279a2f2-84af-4546-8d3d-71bede4fe992">
+
 
 #### Yoga Pose Library 
-![](register.png)
+<img width="600" alt="Screenshot 2024-07-07 at 11 43 59 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/0d8d4e74-8631-4723-bc8b-5d41d4cf1b0d">
+
 
 #### Real-Time Session
-![](login.png)
+<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/42758bc9-4d99-40ea-b670-db0b02df58f7">
+
+#### Nice-to-Haves
+<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/9b9e97b4-38a9-4820-b8c7-2b13983c11ff">
+
 
 
 ### Data
@@ -75,7 +80,7 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 ### Endpoints
 
-**GET /poses**
+**`GET /poses`**
 
 - Retrieve a list of yoga poses with details.
 
@@ -104,7 +109,7 @@ Response:
 ]
 ```
 
-**GET /poses/:id**
+**`GET /poses/:id`**
 
 - Retrieve a specific yoga pose by ID during the real time session.
 
