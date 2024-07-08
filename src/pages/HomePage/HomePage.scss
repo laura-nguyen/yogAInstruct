@@ -17,8 +17,11 @@
   height: 60vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
   @include tablet {
+    flex-direction: row;
     padding: 3rem 3rem;
+    gap: 5rem;
   }
   @include desktop {
     height: 50vh;
@@ -30,6 +33,11 @@
 
 .main__copy {
   text-align: center;
+  order: 2;
+  @include tablet {
+    text-align: left;
+    order: 1;
+  }
 }
 
 .main__img {
@@ -42,16 +50,40 @@
   align-items: center;
   gap: 2rem;
   justify-content: center;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+}
+
+.main__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 75px;
+  order: 1;
+
+  @include tablet {
+    justify-content: flex-end;
+    font-size: 150px;
+    width: 60%;
+    order: 2;
+  }
+  @include desktop {
+    width: 50%;
+    font-size: 175px;
+  }
 }
 
 .about {
   margin: 1.5rem;
   @include tablet {
-    margin: 3rem 2.25rem;
+    margin: 3rem;
   }
 
   @include desktop {
     max-width: 80rem;
+    padding: 0 8rem;
     margin: 2rem auto;
   }
 }

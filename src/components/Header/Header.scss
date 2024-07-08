@@ -54,14 +54,9 @@ nav a {
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
+  padding: 1rem 1.5rem;
 }
-nav a:hover {
-  @include tablet {
-    background-color: rgb(255, 255, 255, 0.5);
-    padding: 20px;
-    border-radius: 50px;
-  }
-}
+
 nav .home-link {
   margin-right: auto;
 }
@@ -136,4 +131,8 @@ nav svg {
 .nav__link-wrapper--cta {
   display: flex;
   justify-content: center;
+}
+
+.header__logo {
+  pointer-events: none;
 }

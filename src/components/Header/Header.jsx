@@ -38,7 +38,7 @@ const Header = () => {
           </label>
 
           <div className="nav__links">
-            <a href="about.html">Poses</a>
+            <a href="about.html">Learn Yoga</a>
             <div className="nav__link-wrapper--cta">
               <button className="nav__link--cta" href="login.html">
                 Start Session

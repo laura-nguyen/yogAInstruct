@@ -3,26 +3,64 @@ import heroImage from "./../../assets/images/warrior ii.jpeg";
 import ideaIcon from "./../../assets/images/idea.png";
 import hourglassIcon from "./../../assets/images/hourglass.png";
 import likeIcon from "./../../assets/images/like.png";
+import { useEffect } from "react";
 
 const HomePage = () => {
+  const yogaIcons = [
+    "🧘‍♀️",
+    "🧘🏿‍♂️",
+    "🧘🏼‍♀️",
+    "🧘🏽‍♂️",
+    "🧘🏿‍♀️",
+    "🧘🏼‍♂️",
+    "🧘🏽‍♀️",
+    "🧘🏾‍♂️",
+    "🧘🏻‍♀️",
+    "🧘🏾‍♂️",
+    "🧘‍♀️",
+    "🧘🏿‍♂️",
+    "🧘🏼‍♀️",
+    "🧘🏽‍♂️",
+    "🧘🏿‍♀️",
+    "🧘🏼‍♂️",
+    "🧘🏽‍♀️",
+    "🧘🏾‍♂️",
+  ];
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const heroIcon = document.getElementById("main__icon");
+
+    const interval = setInterval(() => {
+      heroIcon.innerHTML = yogaIcons[currentIndex];
+
+      currentIndex++;
+
+      if (currentIndex === yogaIcons.length) currentIndex = 0;
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [yogaIcons]);
+
   return (
     <>
       <main className="main">
         <div className="main__copy">
           <h5>Powered by AI 🌟</h5>
-          <h1>Your Personal Yoga Trainer</h1>
+          <h1>Transform your day with your personal yoga trainer</h1>
 
           <p>
-            Transform your day with your intelligent companion - providing
-            real-time feedback, guided sessions, and a library of beginner yoga
-            exercises to improve posture, and enhance well-being.
+            Providing real-time feedback, guided sessions, and a library of
+            beginner yoga exercises to improve posture, and enhance well-being.
           </p>
           <div className="main__cta-links">
             <button>Practice</button>
-            <a href="#about">Learn Poses</a>
+            <a href="#about">Learn Yoga</a>
           </div>
         </div>
-        {/* <img className="main__img" src={heroImage} alt="" /> */}
+        <div id="main__icon" className="main__icon">
+          🧘🏻‍♀️
+        </div>
       </main>
 
       <section className="about">

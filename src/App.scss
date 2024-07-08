@@ -99,24 +99,34 @@ p {
 
 a {
   font-size: 1rem;
-  line-height: 1.5rem;
+  padding: 1rem 1.5rem;
+  line-height: 0;
+
+  &:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 50px;
+  }
 
   @include tablet {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 button {
-  padding: 1rem;
+  padding: 1.5rem 1.5rem;
+  line-height: 0;
   cursor: pointer;
   border-radius: 50px;
+  font-style: italic;
+  border: none;
   background-color: $lime-green;
+  font-weight: 500;
   font-size: 1rem;
   @include tablet {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   &:hover {
-    background-color: $white;
+    background-color: rgb(255, 255, 255, 0.4);
   }
 }
