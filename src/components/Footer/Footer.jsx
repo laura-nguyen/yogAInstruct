@@ -1,15 +1,37 @@
+import "./Footer.scss";
+import lotusLogo from "./../../assets/images/logo-lotus.png";
+import githubIcon from "../../assets/images/github.png";
+
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer>
-      <a href="https://www.flaticon.com/free-icons/flower" title="flower icons">
-        Flower icons created by Freepik - Flaticon
-      </a>
-      <a
-        href="https://www.flaticon.com/free-icons/bad-feedback"
-        title="bad feedback icons"
-      >
-        Bad feedback icons created by Abdul-Aziz - Flaticon
-      </a>
+    <footer className="footer">
+      <div className="footer__content">
+        <a className="footer__logo">
+          <img
+            className="footer__logo-icon"
+            src={lotusLogo}
+            alt="vector icon of a lotus flower"
+          />
+          Yoga AI
+        </a>
+
+        <p className="footer__text">
+          © Copyright {currentYear} | Made With ❤️ & 💧 by Laura Nguyen
+        </p>
+        <a
+          className="footer__github-link"
+          href="https://github.com/laura-nguyen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="footer__github-icon"
+            src={githubIcon}
+            alt="GitHub icon"
+          />
+        </a>
+      </div>
     </footer>
   );
 };

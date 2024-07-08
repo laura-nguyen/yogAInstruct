@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   @include tablet {
     flex-direction: row;
     padding: 3rem 3rem;
@@ -85,6 +86,7 @@
     max-width: 80rem;
     padding: 0 8rem;
     margin: 2rem auto;
+    margin-bottom: 4rem;
   }
 }
 

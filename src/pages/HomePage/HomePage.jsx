@@ -55,7 +55,7 @@ const HomePage = () => {
           </p>
           <div className="main__cta-links">
             <button>Practice</button>
-            <a href="#about">Learn Yoga</a>
+            <a href="#about">Learn</a>
           </div>
         </div>
         <div id="main__icon" className="main__icon">
