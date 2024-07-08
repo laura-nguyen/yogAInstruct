@@ -13,7 +13,13 @@
 }
 
 body {
-  background-color: $off-white;
+  // background-color: $off-white;
+  background: rgb(254, 255, 127);
+  background: radial-gradient(
+    circle,
+    rgba(254, 255, 127, 1) 0%,
+    rgba(253, 218, 255, 1) 100%
+  );
 }
 
 h1 {

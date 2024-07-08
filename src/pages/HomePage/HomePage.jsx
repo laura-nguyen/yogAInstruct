@@ -21,17 +21,8 @@ const HomePage = () => {
         <img className="main__img" src={heroImage} alt="" />
       </main>
 
-      <section className="about">
-        <h2>About Flexifit AI</h2>
-        <p>
-          At Flexifit AI, we believe that everyone deserves the opportunity to
-          be fit and healthy, regardless of their schedule or location. Our
-          intelligent personal trainer uses advanced AI and machine learning
-          technologies to provide personalized workout programs, real-time
-          feedback, and detailed progress tracking. Join us and see how easy it
-          is to integrate fitness into your daily routine.
-        </p>
-        <h3>Get Started in 3 Simple Steps</h3>
+      {/* <section className="about">
+        <h2>Get Started in 3 Simple Steps</h2>
         <ul className="about__list">
           <li className="about__card">
             <img className="main__img" src={heroImage} alt="" />
@@ -60,8 +51,7 @@ const HomePage = () => {
             </p>
           </li>
         </ul>
-        <button>Start Your Free Trial</button>
-      </section>
+      </section> */}
 
       <h1 className="bold">
         H1 The quick brown fox jumps over the lazy dog Bold{" "}
