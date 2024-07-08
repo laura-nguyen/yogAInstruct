@@ -1,57 +1,72 @@
 import "./HomePage.scss";
 import heroImage from "./../../assets/images/warrior ii.jpeg";
+import ideaIcon from "./../../assets/images/idea.png";
+import hourglassIcon from "./../../assets/images/hourglass.png";
+import likeIcon from "./../../assets/images/like.png";
 
 const HomePage = () => {
   return (
     <>
       <main className="main">
         <div className="main__copy">
-          <h1>Get Fit Anywhere, Anytime</h1>
+          <h5>Powered by AI 🌟</h5>
+          <h1>Your Personal Yoga Trainer</h1>
+
           <p>
-            Kick-start your fitness journey with Flexifit AI, your personal AI
-            trainer that brings expert-guided workouts right to your home.
-            Whether you're a busy professional or just starting your fitness
-            journey, Flexifit AI offers tailored workout programs, real-time
-            feedback, and progress tracking to help you achieve your fitness
-            goals.
+            Transform your day with your intelligent companion - providing
+            real-time feedback, guided sessions, and a library of beginner yoga
+            exercises to improve posture, and enhance well-being.
           </p>
-          <button>Start Your Free Trial</button>
-          <a href="#about">Learn More About Us</a>
+          <div className="main__cta-links">
+            <button>Practice</button>
+            <a href="#about">Learn Poses</a>
+          </div>
         </div>
-        <img className="main__img" src={heroImage} alt="" />
+        {/* <img className="main__img" src={heroImage} alt="" /> */}
       </main>
 
-      {/* <section className="about">
-        <h2>Get Started in 3 Simple Steps</h2>
+      <section className="about">
+        <h2>Personal guidance at your convenience</h2>
         <ul className="about__list">
           <li className="about__card">
-            <img className="main__img" src={heroImage} alt="" />
-            <h4>Sign Up and Set Your Goals</h4>
+            <img
+              className="main__img"
+              src={ideaIcon}
+              alt="icon of a lightblub floating on a book"
+            />
+            <h4>Learn Beginner Poses</h4>
             <p>
-              Create an account and tell us about your fitness goals and current
-              fitness level.
+              Our app guides you through beginner yoga poses and educates you on
+              their benefits, making it easy for anyone to get started.
             </p>
           </li>
           <li className="about__card">
-            <img className="main__img" src={heroImage} alt="" />
-            <h4>Follow Your Personalized Workout Plan</h4>
+            <img
+              className="main__img"
+              src={hourglassIcon}
+              alt="hourglass icon"
+            />
+            <h4>Real-Time Countdown Timer</h4>
             <p>
-              Get access to customized workout programs designed specifically
-              for you. Follow along with real-time feedback to ensure proper
-              form and maximize results.
+              Hold each pose for the perfect duration with our real-time
+              countdown timer, ensuring you get the most out of every session.
             </p>
           </li>
           <li className="about__card">
-            <img className="main__img" src={heroImage} alt="" />
-            <h4>Track Your Progress and Stay Motivated</h4>
+            <img
+              className="main__img"
+              src={likeIcon}
+              alt="like with text bubbles icon"
+            />
+            <h4>Instant Feedback</h4>
             <p>
-              Monitor your progress with detailed analytics and reports.
-              Celebrate your achievements and stay motivated with our built-in
-              reward system.
+              Experience guided sessions with instant feedback, powered by AI,
+              to improve your posture and overall well-being right from your
+              fingertips.
             </p>
           </li>
         </ul>
-      </section> */}
+      </section>
 
       <h1 className="bold">
         H1 The quick brown fox jumps over the lazy dog Bold{" "}

@@ -41,14 +41,22 @@
 }
 
 .main {
-  margin: 1rem;
+  margin: 1.5rem;
+  height: 60vh;
+  display: flex;
+  align-items: center;
   @include tablet {
     margin: 3rem 2.25rem;
   }
   @include desktop {
+    height: 40vh;
     max-width: 80rem;
     margin: 2.25rem auto;
   }
+}
+
+.main__copy {
+  text-align: center;
 }
 
 .main__img {
@@ -65,8 +73,15 @@
   }
 }
 
+.main__cta-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
 .about {
-  margin: 1rem;
+  margin: 1.5rem;
   @include tablet {
     margin: 3rem 2.25rem;
   }
@@ -78,8 +93,9 @@
 }
 
 .main__img {
-  border-radius: 25px;
-  border: $black 2px solid;
+  width: 50px;
+  height: auto;
+  padding: 0.5rem;
 }
 
 .value-props {
@@ -97,16 +113,16 @@
 .about__list {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  gap: 1rem;
 
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
-    gap: 2.25rem;
   }
 }
 
 .about__card {
-  border-radius: 25px;
-  border: $black 2px solid;
-  padding: 2.25rem;
+  //   border-radius: 25px;
+  //   border: $black 2px solid;
 }

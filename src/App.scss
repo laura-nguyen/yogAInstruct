@@ -23,16 +23,20 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
 
   @include tablet {
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 7rem;
   }
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
   // line-height: 2rem;
 
   @include tablet {
@@ -43,6 +47,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  font-weight: 600;
   // line-height: 2rem;
 
   @include tablet {
@@ -52,35 +57,48 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
 
   @include tablet {
     font-size: 24px;
-    line-height: 2.75rem;
+    line-height: 2rem;
   }
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 0.875rem;
   line-height: 2rem;
   display: inline-block;
-  padding: 10px 20px; // Adjust the padding to your preference
+  padding: 1px 20px; // Adjust the padding to your preference
   border-radius: 50px; // Adjust the border-radius to create the oval shape
   text-align: center;
-  border: solid $black 2px;
+  border: solid $black 1px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 
   @include tablet {
-    font-size: 22px;
+    font-size: 1rem;
     line-height: 2.75rem;
   }
 }
 
 p {
-  font-size: 22px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 
   @include tablet {
-    font-size: 1.125rem;
+    font-size: 20px;
+  }
+}
+
+a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  @include tablet {
     font-size: 20px;
   }
 }
@@ -90,6 +108,7 @@ button {
   cursor: pointer;
   border-radius: 50px;
   background-color: $lime-green;
+  font-size: 1rem;
   @include tablet {
     font-size: 20px;
   }

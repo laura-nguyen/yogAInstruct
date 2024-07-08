@@ -1,9 +1,15 @@
 import "./Header.scss";
+import lotusLogo from "./../../assets/images/logo-lotus.png";
 
 const Header = () => {
   return (
     <header className="header">
       <a className="header__logo" href="index.html">
+        <img
+          className="header__logo-icon"
+          src={lotusLogo}
+          alt="vector icon of a lotus flower"
+        />
         Yoga AI
       </a>
       <nav>
