@@ -31,8 +31,14 @@ const Header = () => {
             </svg>
           </label>
 
-          <a href="about.html">Poses</a>
-          <a href="login.html">Start Session</a>
+          <div className="nav__links">
+            <a href="about.html">Poses</a>
+            <div className="nav__link-wrapper--cta">
+              <button className="nav__link--cta" href="login.html">
+                Start Session
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
