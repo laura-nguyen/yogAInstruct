@@ -1,0 +1,94 @@
+@import "./styles/partials/mixins.scss";
+@import "./styles/partials/typography.scss";
+@import "./styles/partials/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Nohemi", "Helvetica", "Arial", sans-serif;
+  color: $black;
+}
+
+body {
+  background-color: $off-white;
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  @include tablet {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  // line-height: 2rem;
+
+  @include tablet {
+    font-size: 3.75rem;
+    // line-height: 2.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  // line-height: 2rem;
+
+  @include tablet {
+    font-size: 3rem;
+    // line-height: 2.75rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 2.75rem;
+  }
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  display: inline-block;
+  padding: 10px 20px; // Adjust the padding to your preference
+  border-radius: 50px; // Adjust the border-radius to create the oval shape
+  text-align: center;
+  border: solid $black 2px;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 2.75rem;
+  }
+}
+
+p {
+  font-size: 22px;
+
+  @include tablet {
+    font-size: 1.125rem;
+    font-size: 20px;
+  }
+}
+
+button {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: $lime-green;
+  @include tablet {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $white;
+  }
+}
