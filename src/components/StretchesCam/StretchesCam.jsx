@@ -35,9 +35,9 @@ const StretchesCam = () => {
         brain = ml5.neuralNetwork(options);
 
         const modelInfo = {
-          model: "/model/model.json",
-          metadata: "/model/model_meta.json",
-          weights: "/model/model.weights.bin",
+          model: "model/model.json",
+          metadata: "model/model_meta.json",
+          weights: "model/model.weights.bin",
         };
 
         fetch(modelInfo.model)
@@ -109,17 +109,8 @@ const StretchesCam = () => {
     }
 
     function gotResult(error, results) {
-      if (results && results[0].confidence > 0.75) {
-        const sketchLabel = results[0].label.toUpperCase();
-        if (sketchLabel === "A") {
-          setPoseLabel("overhead");
-        } else if (sketchLabel === "B") {
-          setPoseLabel("right stretch");
-        } else if (sketchLabel === "C") {
-          setPoseLabel("left stretch");
-        } else {
-          setPoseLabel("overhead right stretch");
-        }
+      if (results && results[0].confidence > 0.8) {
+        setPoseLabel(results[0].label.toUpperCase());
       }
       classifyPose();
     }
