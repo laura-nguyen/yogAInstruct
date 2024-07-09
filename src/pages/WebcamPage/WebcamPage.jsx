@@ -1,12 +1,14 @@
 import StretchesCam from "../../components/StretchesCam/StretchesCam";
-import "./StretchesPage.scss";
+import Timer from "../../components/Timer/Timer";
+import "./WebcamPage.scss";
 
-const StretchesPage = () => {
+const WebcamPage = () => {
   return (
     <main className="session">
       <StretchesCam />
+      <Timer />
     </main>
   );
 };
 
-export default StretchesPage;
+export default WebcamPage;

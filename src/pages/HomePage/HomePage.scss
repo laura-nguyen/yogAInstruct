@@ -39,11 +39,14 @@
 
 .main__cta-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
 
   @include tablet {
+    flex-direction: row;
+    gap: 2rem;
     justify-content: flex-start;
   }
 }
@@ -69,6 +72,7 @@
 
 .about {
   margin: 1.5rem;
+  margin-bottom: 4rem;
   @include tablet {
     margin: 3rem;
   }

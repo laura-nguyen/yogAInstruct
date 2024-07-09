@@ -1,4 +1,4 @@
-import StretchesPage from "./pages/StretchesPage/StretchesPage";
+import WebcamPage from "./pages/WebcamPage/WebcamPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -16,7 +16,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/poses" element={<PosesPage />} />
           <Route path="/instructions" element={<InstructionsPage />} />
-          <Route path="/stretches" element={<StretchesPage />} />
+          <Route path="/practice/" element={<WebcamPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

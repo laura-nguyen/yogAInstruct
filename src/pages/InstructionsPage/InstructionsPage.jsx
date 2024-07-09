@@ -1,4 +1,5 @@
 import "./InstructionsPage.scss";
+import cameraAsk from "./../../assets/images/camera-permission.png";
 import { NavLink } from "react-router-dom";
 
 const InstructionsPage = () => {
@@ -27,7 +28,7 @@ const InstructionsPage = () => {
         </ul>
       </div>
       <div className="instructions__proceed">
-        <NavLink to="/stretches">
+        <NavLink to="/practice">
           <button>I'm ready!</button>
         </NavLink>
       </div>
