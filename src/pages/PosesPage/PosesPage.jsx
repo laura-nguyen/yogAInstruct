@@ -1,7 +1,9 @@
 import poses from "../../data/yoga_poses.json";
 import PoseCard from "../../components/PoseCard/PoseCard";
+import { useParams } from "react-router-dom";
 
 export const PosesPage = () => {
+  const poseId = useParams();
   return (
     <main className="instructions">
       <h1 className="instructions__header">Learn Yoga Poses</h1>

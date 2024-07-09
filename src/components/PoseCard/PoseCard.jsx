@@ -1,8 +1,8 @@
 import "./PoseCard.scss";
 import { NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const PoseCard = ({ pose }) => {
-  console.log(pose);
   return (
     <div className="poses__card">
       <div className="card">
@@ -19,7 +19,7 @@ const PoseCard = ({ pose }) => {
           <h4 className="name">{pose.english_name}</h4>
           <span>{pose.sanskrit_name_adapted}</span>
           <p>{pose.pose_description}</p>
-          <NavLink to="/practice/:poseId">
+          <NavLink to={`/practice/${pose.id}`}>
             <button className="card__button">Practice</button>
           </NavLink>
         </div>
