@@ -1,0 +1,11 @@
+.stretches-cam-container {
+  position: relative;
+  overflow: auto !important;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: #222;
+}

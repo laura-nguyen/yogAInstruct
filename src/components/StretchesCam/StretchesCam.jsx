@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import * as ml5 from "ml5";
 import p5 from "p5";
+import "./StretchesCam.scss";
 
 const StretchesCam = () => {
   const canvasRef = useRef(null);
@@ -109,7 +110,7 @@ const StretchesCam = () => {
     }
 
     function gotResult(error, results) {
-      if (results && results[0].confidence > 0.8) {
+      if (results && results[0].confidence > 0.75) {
         setPoseLabel(results[0].label.toUpperCase());
       }
       classifyPose();
