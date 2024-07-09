@@ -1,5 +1,5 @@
 import WebcamPage from "./pages/WebcamPage/WebcamPage";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
@@ -16,8 +16,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/poses" element={<PosesPage />} />
           <Route path="/instructions" element={<InstructionsPage />} />
-          <Route path="/practice" element={<WebcamPage />} />
-          <Route path="/practice/:poseId" element={<WebcamPage />} />
+          <Route path="/practice/" element={<WebcamPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
