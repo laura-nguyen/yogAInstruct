@@ -4,8 +4,18 @@ import p5 from "p5";
 import "./PoseCam.scss";
 
 const PoseCam = ({ pose }) => {
-  const { id, english_name, image, pose_description, pose_benefits } = pose;
+  const {
+    id,
+    english_name,
+    image,
+    pose_description,
+    pose_benefits,
+    instructions,
+  } = pose;
+
+  console.log({ image });
   const canvasRef = useRef(null);
+
   const [poseLabel, setPoseLabel] = useState("");
 
   useEffect(() => {
@@ -133,11 +143,31 @@ const PoseCam = ({ pose }) => {
   }, []);
 
   return (
-    <div className="stretches-cam-container">
+    <>
       <h1>{english_name}</h1>
-      <div ref={canvasRef}></div>
-      <div className="pose-label">{poseLabel}</div>
-    </div>
+      <div className="cam-container">
+        <div className="cam__content--left">
+          <div ref={canvasRef}></div>
+        </div>
+
+        <div className="cam__content--right">
+          <div className="cam__feedback">{poseLabel}</div>
+          <img
+            className="cam__img"
+            src={`/${image}`}
+            alt={`${english_name} pose`}
+          />
+          <div className="cam__timer">0:20</div>
+        </div>
+      </div>
+      <ol className="cam__instructions">
+        {instructions.map((step, index) => (
+          <li className="cam__instructions-step" key={index}>
+            {step}
+          </li>
+        ))}
+      </ol>
+    </>
   );
 };
 

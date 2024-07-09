@@ -2,10 +2,11 @@ import "./PoseCard.scss";
 import { NavLink } from "react-router-dom";
 
 const PoseCard = ({ pose }) => {
+  const { image, english_name, pose_description } = pose;
   return (
     <div className="poses__card">
       <div className="card">
-        <img className="card__img" src={pose.image} alt="Lago di Braies" />
+        <img className="card__img" src={image} alt="Lago di Braies" />
 
         <div className="card__details">
           <div className="card__tags">
@@ -15,9 +16,9 @@ const PoseCard = ({ pose }) => {
               </span>
             ))}
           </div>
-          <h4 className="name">{pose.english_name}</h4>
+          <h4 className="name">{english_name}</h4>
           <span>{pose.sanskrit_name_adapted}</span>
-          <p>{pose.pose_description}</p>
+          <p>{pose_description}</p>
           <NavLink to={`/practice/${pose.id}`}>
             <button className="card__button">Practice</button>
           </NavLink>

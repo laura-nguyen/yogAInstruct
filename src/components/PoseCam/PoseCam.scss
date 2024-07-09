@@ -1,14 +1,60 @@
-.stretches-cam-container {
-  position: relative;
-  width: 100%;
-  overflow-x: auto;
+@import "./../../styles/partials/mixins.scss";
+@import "./../../styles/partials/typography.scss";
+@import "./../../styles/partials/variables.scss";
+
+.cam-container {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 2.25rem;
+  }
 }
 
-.stretches-cam-container canvas {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.cam-container canvas {
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
   min-width: 640px; /* Ensure the canvas maintains its width */
   height: auto;
   border-radius: 25px;
+}
+
+.cam__content--left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.cam__content--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cam__instructions-step {
+  list-style-type: decimal;
+  margin: 1em 0; // Add some margin for spacing
+  padding-left: 20px; // Add some padding to indent the list
+}
+
+.cam__feedback {
+  background-color: white;
+  border-radius: 25px;
+  border: solid 1px black;
+  padding: 1.5rem;
+}
+
+.cam__img {
+  width: 100%;
+  border-radius: 25px;
+  border: solid 1px black;
+}
+
+.cam__timer {
+  background-color: white;
+  border-radius: 25px;
+  border: solid 1px black;
+  padding: 1.5rem;
 }

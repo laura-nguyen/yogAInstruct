@@ -37,23 +37,19 @@ h2 {
   margin-bottom: 1.5rem;
   font-weight: 600;
   font-style: italic;
-  // line-height: 2rem;
 
   @include tablet {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    // line-height: 2.75rem;
   }
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  // line-height: 2rem;
 
   @include tablet {
     font-size: 3rem;
-    // line-height: 2.75rem;
   }
 }
 
@@ -85,7 +81,8 @@ h5 {
   }
 }
 
-p {
+p,
+li {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
@@ -94,6 +91,10 @@ p {
   @include tablet {
     font-size: 18px;
   }
+}
+
+li {
+  margin-bottom: 0 !important;
 }
 
 .nav__link--non-button {
