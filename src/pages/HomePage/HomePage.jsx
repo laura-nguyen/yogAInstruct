@@ -65,7 +65,7 @@ const HomePage = () => {
       </main>
 
       <section className="about">
-        <h2 className="about__header">Personal Guidance at Your Convenience</h2>
+        <h2 className="about__header">How it Works</h2>
         <ul className="about__list">
           <li className="about__card">
             <div className="main__img">📚</div>
