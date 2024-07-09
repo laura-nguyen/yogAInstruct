@@ -1,11 +1,12 @@
 [
   {
+    "id": "1",
     "english_name": "Tree",
     "sanskrit_name_adapted": "Vrksasana",
     "sanskrit_name": "Vṛkṣāsana",
     "pose_description": "Tree Pose is a balancing posture that strengthens the legs, ankles, and feet while improving flexibility and balance.",
     "pose_benefits": "Strengthens the legs, ankles, and feet. Improves flexibility in the hips and knees. Improves balance.",
-    "image": "URL_to_image",
+    "image": "src/assets/images/tree pose.jpeg",
     "categories": ["Standing Poses", "Balancing Poses"],
     "instructions": [
       "Start standing tall with feet together.",
@@ -17,12 +18,13 @@
     ]
   },
   {
+    "id": "2",
     "english_name": "Warrior One",
     "sanskrit_name_adapted": "Virabhadrasana One",
     "sanskrit_name": "Vīrabhadrāsana I",
     "pose_description": "Warrior One Pose is a standing posture that stretches the chest, lungs, and shoulders while strengthening the legs, back, and arms.",
     "pose_benefits": "Stretches the chest, lungs, shoulders, neck, belly and groin (psoas). Strengthens the shoulders, arms and back muscles. Strengthens and stretches the thighs, calves and ankles.",
-    "image": "URL_to_image",
+    "image": "src/assets/images/warrior i.jpeg",
     "categories": ["Standing Poses", "Backbends"],
     "instructions": [
       "Start in a wide stance, feet aligned.",
@@ -35,12 +37,13 @@
     ]
   },
   {
+    "id": "3",
     "english_name": "Warrior Two",
     "sanskrit_name_adapted": "Virabhadrasana Two",
     "sanskrit_name": "Vīrabhadrāsana II",
     "pose_description": "Warrior Two Pose is a standing posture that strengthens and stretches the legs, groin, and chest while improving stamina and focus.",
     "pose_benefits": "Strengthens and stretches the legs and ankles. Stretches the groin, chest, lungs, and shoulders. Stimulates abdominal organs. Increases stamina. Relieves backaches, especially through the second trimester of pregnancy. Therapeutic for carpal tunnel syndrome, flat feet, infertility, osteoporosis, and sciatica.",
-    "image": "URL_to_image",
+    "image": "src/assets/images/warrior ii.jpeg",
     "categories": ["Standing Poses"],
     "instructions": [
       "Start in a wide stance, feet aligned.",
@@ -53,12 +56,13 @@
     ]
   },
   {
+    "id": "4",
     "english_name": "Chair",
     "sanskrit_name_adapted": "Utkatasana",
     "sanskrit_name": "Utkaṭāsana",
     "pose_description": "Chair Pose is a strengthening posture that works the lower body, core, and upper body while improving stamina and focus.",
     "pose_benefits": "Strengthens the ankles, thighs, calves, and spine. Stretches shoulders and chest. Stimulates the abdominal organs, diaphragm, and heart. Reduces flat feet. Energizes the entire body.",
-    "image": "URL_to_image",
+    "image": "src/assets/images/chair.jpeg",
     "categories": ["Standing Poses", "Strengthening Poses"],
     "instructions": [
       "Start standing with feet together.",
@@ -70,12 +74,13 @@
     ]
   },
   {
+    "id": "5",
     "english_name": "Mountain",
     "sanskrit_name_adapted": "Tadasana",
     "sanskrit_name": "Tāḍāsana",
     "pose_description": "Mountain Pose is a foundational posture that improves posture and balance while strengthening the legs and core.",
     "pose_benefits": "Improves posture and balance. Strengthens thighs, knees, and ankles. Firms abdomen and buttocks. Relieves sciatica.",
-    "image": "URL_to_image",
+    "image": "src/assets/images/mountain pose.jpeg",
     "categories": ["Standing Poses"],
     "instructions": [
       "Stand with feet together, big toes touching.",
@@ -87,12 +92,13 @@
     ]
   },
   {
+    "id": "6",
     "english_name": "Goddess",
     "sanskrit_name_adapted": "Utkata Konasana",
     "sanskrit_name": "Utkaṭa Koṇāsana",
     "pose_description": "Goddess Pose is a strengthening posture that targets the lower body, core, and upper body while improving balance and focus.",
     "pose_benefits": "Strengthens the legs, glutes, core, and upper body. Stretches the hips, chest, and shoulders. Improves balance and focus.",
-    "image": "URL_to_image",
+    "image": "src/assets/images/goddess pose.jpeg",
     "categories": ["Standing Poses", "Strengthening Poses"],
     "instructions": [
       "Stand with feet wide apart, toes outward.",
