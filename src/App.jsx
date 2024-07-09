@@ -1,4 +1,3 @@
-import WebcamPage from "./pages/WebcamPage/WebcamPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -17,9 +16,6 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/poses" element={<PosesPage />} />
           <Route path="/instructions" element={<InstructionsPage />} />
-          {/* this works  */}
-          <Route path="/practice/" element={<WebcamPage />} />
-          {/* testing this page  */}
           <Route path="/practice/:poseId" element={<PoseCamPage />} />
         </Routes>
         <Footer />
