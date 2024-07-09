@@ -1,5 +1,6 @@
 import "./HomePage.scss";
 import { useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const HomePage = () => {
   const yogaIcons = [
@@ -50,8 +51,12 @@ const HomePage = () => {
             beginner yoga exercises to improve posture, and enhance well-being.
           </p>
           <div className="main__cta-links">
-            <button>Practice</button>
-            <a href="#about">Learn</a>
+            <NavLink to="/instructions">
+              <button>Practice</button>
+            </NavLink>
+            <NavLink to="/poses" className="nav__link--non-button">
+              Learn
+            </NavLink>
           </div>
         </div>
         <div id="main__icon" className="main__icon">

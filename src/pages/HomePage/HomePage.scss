@@ -2,16 +2,6 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
-.circle-text {
-  border-radius: 10px;
-  border-color: $black !important;
-  border-width: 4px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background-color: $off-white;
-}
-
 .main {
   margin: 1.5rem;
   height: 60vh;

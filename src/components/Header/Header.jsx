@@ -1,5 +1,6 @@
 import "./Header.scss";
 import lotusLogo from "./../../assets/images/logo-lotus.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -38,11 +39,13 @@ const Header = () => {
           </label>
 
           <div className="nav__links">
-            <a href="about.html">Learn Yoga</a>
+            <NavLink to="/poses" className="nav__link--non-button">
+              Learn Yoga
+            </NavLink>
             <div className="nav__link-wrapper--cta">
-              <button className="nav__link--cta" href="login.html">
-                Start Session
-              </button>
+              <NavLink to="/poses">
+                <button className="nav__link--cta">Start Session</button>
+              </NavLink>
             </div>
           </div>
         </div>
