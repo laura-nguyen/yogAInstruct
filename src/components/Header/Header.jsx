@@ -1,5 +1,5 @@
 import "./Header.scss";
-import lotusLogo from "./../../assets/images/logo-lotus.png";
+import lotusLogo from "./../../assets/icons/logo-lotus.png";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {

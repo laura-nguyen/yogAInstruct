@@ -1,6 +1,6 @@
 import "./Footer.scss";
-import lotusLogo from "./../../assets/images/logo-lotus.png";
-import githubIcon from "../../assets/images/github.png";
+import lotusLogo from "./../../assets/icons/logo-lotus.png";
+import githubIcon from "../../assets/icons/github.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
