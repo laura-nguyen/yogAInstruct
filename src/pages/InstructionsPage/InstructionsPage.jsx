@@ -1,5 +1,4 @@
 import "./InstructionsPage.scss";
-import cameraAsk from "./../../assets/images/camera-permission.png";
 import { NavLink } from "react-router-dom";
 
 const InstructionsPage = () => {
