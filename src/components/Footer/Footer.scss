@@ -4,6 +4,11 @@
 
 .footer {
   background-color: rgb(255, 255, 255, 0.4);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  /* negative value of footer height */
 
   padding: 1rem;
 
@@ -21,7 +26,7 @@
 }
 
 .footer__text {
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
   font-size: 0.9375rem;
 }
 
@@ -50,6 +55,7 @@
 }
 
 .footer__github-link {
+  padding: 0.5rem 0;
   &:hover {
     background-color: rgb(255, 255, 255, 0);
   }

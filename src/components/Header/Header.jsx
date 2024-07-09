@@ -5,14 +5,14 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
-      <a className="header__logo" href="index.html">
+      <NavLink to="/" className="header__logo">
         <img
           className="header__logo-icon"
           src={lotusLogo}
           alt="vector icon of a lotus flower"
         />
         Yoga AI
-      </a>
+      </NavLink>
       <nav>
         <input type="checkbox" id="sidebar-active" />
         <label htmlFor="sidebar-active" className="open-sidebar-button">
@@ -43,7 +43,7 @@ const Header = () => {
               Learn Yoga
             </NavLink>
             <div className="nav__link-wrapper--cta">
-              <NavLink to="/poses">
+              <NavLink to="/instructions">
                 <button className="nav__link--cta">Start Session</button>
               </NavLink>
             </div>
