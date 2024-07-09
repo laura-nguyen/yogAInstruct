@@ -1,8 +1,9 @@
 import StretchesCam from "../../components/StretchesCam/StretchesCam";
+import "./StretchesPage.scss";
 
 const StretchesPage = () => {
   return (
-    <main>
+    <main className="session">
       <StretchesCam />
     </main>
   );

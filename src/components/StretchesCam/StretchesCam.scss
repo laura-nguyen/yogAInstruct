@@ -1,11 +1,13 @@
 .stretches-cam-container {
   position: relative;
-  overflow: auto !important;
+  width: 100%;
+  overflow-x: auto;
 }
 
-canvas {
-  height: 100%;
-  width: 100%;
+.stretches-cam-container canvas {
   display: block;
-  background: #222;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 640px; /* Ensure the canvas maintains its width */
+  height: auto;
 }

@@ -17,6 +17,7 @@ const PoseCard = ({ pose }) => {
             ))}
           </div>
           <h4 className="name">{pose.english_name}</h4>
+          <span>{pose.sanskrit_name_adapted}</span>
           <p>{pose.pose_description}</p>
           <NavLink to="/stretches">
             <button className="card__button">Practice</button>
