@@ -3,6 +3,10 @@ import lotusLogo from "./../../assets/icons/logo-lotus.png";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const handleNavLinkClick = () => {
+    document.getElementById("sidebar-active").checked = false;
+  };
+
   return (
     <header className="header">
       <NavLink to="/" className="header__logo">
@@ -39,11 +43,15 @@ const Header = () => {
           </label>
 
           <div className="nav__links">
-            <NavLink to="/poses" className="nav__link--non-button">
+            <NavLink
+              to="/poses"
+              className="nav__link--non-button"
+              onClick={handleNavLinkClick}
+            >
               Learn Yoga
             </NavLink>
             <div className="nav__link-wrapper--cta">
-              <NavLink to="/instructions">
+              <NavLink to="/instructions" onClick={handleNavLinkClick}>
                 <button className="nav__link--cta">Start Session</button>
               </NavLink>
             </div>
