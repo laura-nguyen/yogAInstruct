@@ -30,16 +30,16 @@ const PoseCam = ({ pose }) => {
 
         let options = {
           inputs: 34,
-          outputs: 4,
+          outputs: 7,
           task: "classification",
           debug: true,
         };
         brain = ml5.neuralNetwork(options);
 
         const modelInfo = {
-          model: "model/model.json",
-          metadata: "model/model_meta.json",
-          weights: "model/model.weights.bin",
+          model: "/model/model.json",
+          metadata: "/model/model_meta.json",
+          weights: "/model/model.weights.bin",
         };
 
         fetch(modelInfo.model)
