@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "0",
     "english_name": "Tree",
     "sanskrit_name_adapted": "Vrksasana",
     "sanskrit_name": "Vṛkṣāsana",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "1",
     "english_name": "Warrior One",
     "sanskrit_name_adapted": "Virabhadrasana One",
     "sanskrit_name": "Vīrabhadrāsana I",
@@ -37,7 +37,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "2",
     "english_name": "Warrior Two",
     "sanskrit_name_adapted": "Virabhadrasana Two",
     "sanskrit_name": "Vīrabhadrāsana II",
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "3",
     "english_name": "Chair",
     "sanskrit_name_adapted": "Utkatasana",
     "sanskrit_name": "Utkaṭāsana",
@@ -74,7 +74,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "4",
     "english_name": "Mountain",
     "sanskrit_name_adapted": "Tadasana",
     "sanskrit_name": "Tāḍāsana",
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "id": "6",
+    "id": "5",
     "english_name": "Goddess",
     "sanskrit_name_adapted": "Utkata Konasana",
     "sanskrit_name": "Utkaṭa Koṇāsana",

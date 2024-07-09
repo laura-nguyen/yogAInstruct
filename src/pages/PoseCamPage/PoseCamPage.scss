@@ -1,0 +1,16 @@
+@import "./../../styles/partials/mixins.scss";
+@import "./../../styles/partials/typography.scss";
+@import "./../../styles/partials/variables.scss";
+
+.session {
+  margin: 1.5rem;
+
+  @include tablet {
+    margin: 3rem 3rem;
+  }
+  @include desktop {
+    max-width: 80rem;
+    padding: 0 8rem;
+    margin: 3rem auto;
+  }
+}

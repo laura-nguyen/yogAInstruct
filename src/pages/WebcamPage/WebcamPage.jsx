@@ -6,7 +6,7 @@ const WebcamPage = () => {
   return (
     <main className="session">
       <StretchesCam />
-      <Timer />
+      {/* <Timer /> */}
     </main>
   );
 };
