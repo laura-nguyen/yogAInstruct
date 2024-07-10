@@ -12,8 +12,6 @@ const PoseCam = ({ pose }) => {
     pose_benefits,
     instructions,
   } = pose;
-
-  console.log({ image });
   const canvasRef = useRef(null);
 
   const [poseLabel, setPoseLabel] = useState("");
@@ -46,10 +44,12 @@ const PoseCam = ({ pose }) => {
         };
         brain = ml5.neuralNetwork(options);
 
+        // use different models for each exercise
+
         const modelInfo = {
-          model: "/model/model.json",
-          metadata: "/model/model_meta.json",
-          weights: "/model/model.weights.bin",
+          model: "/mountain-model/model.json",
+          metadata: "/mountain-model/model_meta.json",
+          weights: "/mountain-model/model.weights.bin",
         };
 
         fetch(modelInfo.model)
@@ -121,7 +121,7 @@ const PoseCam = ({ pose }) => {
     }
 
     function gotResult(error, results) {
-      if (results && results[0].confidence > 0.75) {
+      if (results && results[0].confidence > 0.9) {
         setPoseLabel(results[0].label.toUpperCase());
       }
       classifyPose();
@@ -148,25 +148,25 @@ const PoseCam = ({ pose }) => {
       <div className="cam-container">
         <div className="cam__content--left">
           <div ref={canvasRef}></div>
+          <div className="cam__feedback">{poseLabel}</div>
         </div>
 
         <div className="cam__content--right">
-          <div className="cam__feedback">{poseLabel}</div>
+          <div className="cam__timer">0:20</div>
           <img
             className="cam__img"
             src={`/${image}`}
             alt={`${english_name} pose`}
           />
-          <div className="cam__timer">0:20</div>
+          <ol className="cam__instructions">
+            {instructions.map((step, index) => (
+              <li className="cam__instructions-step" key={index}>
+                {step}
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
-      <ol className="cam__instructions">
-        {instructions.map((step, index) => (
-          <li className="cam__instructions-step" key={index}>
-            {step}
-          </li>
-        ))}
-      </ol>
     </>
   );
 };
