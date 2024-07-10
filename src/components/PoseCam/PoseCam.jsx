@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import * as ml5 from "ml5";
 import p5 from "p5";
 import "./PoseCam.scss";
@@ -14,7 +14,32 @@ const PoseCam = ({ pose }) => {
   } = pose;
   const canvasRef = useRef(null);
 
-  const [poseLabel, setPoseLabel] = useState("");
+
+  const [startingTime, setStartingTime] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [poseTime, setPoseTime] = useState(0);
+  const [isStartPose, setIsStartPose] = useState(false);
+
+  const startYoga = (value) => {
+    setIsStartPose(value);
+  };
+
+  const stopPose = () => {
+    setIsStartPose(false);
+    clearInterval(interval);
+  };
+
+  const startingTimefunc = (start_time) => {
+    setStartingTime(start_time);
+  };
+
+  const currentTimefunc = (current_time) => {
+    setCurrentTime(current_time);
+  };
+
+  const poseTimefunc = (pose_time) => {
+    setPoseTime(pose_time);
+  };
 
   useEffect(() => {
     let video;
@@ -166,6 +191,10 @@ const PoseCam = ({ pose }) => {
             ))}
           </ol>
         </div>
+      </div>
+      <div>
+        <button>Back</button>
+        <button>Next Pose</button>
       </div>
     </>
   );

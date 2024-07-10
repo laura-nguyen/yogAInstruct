@@ -5,8 +5,9 @@
 .cam-container {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 
-  @include tablet {
+  @include desktop {
     flex-direction: row;
     gap: 2.25rem;
   }
