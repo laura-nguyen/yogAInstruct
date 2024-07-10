@@ -4,11 +4,10 @@
 
 header {
   height: 5rem;
-  background-color: var(--color-1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   position: sticky;
 
   @include tablet {
@@ -118,7 +117,7 @@ nav svg {
   @include tablet {
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 

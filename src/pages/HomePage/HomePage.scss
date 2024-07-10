@@ -5,7 +5,6 @@
 .main {
   margin: 1.5rem;
   margin-bottom: 5rem;
-  height: 60vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,8 +32,19 @@
 }
 
 .main__img {
-  width: 20vw;
-  height: auto;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+
+  @include tablet {
+    font-size: 40px;
+  }
+
+  @include desktop {
+    padding: 1rem;
+    font-size: 50px;
+  }
 }
 
 .main__cta-links {
@@ -45,6 +55,7 @@
   justify-content: center;
 
   @include tablet {
+    margin-top: 2.25rem;
     flex-direction: row;
     gap: 2rem;
     justify-content: flex-start;
@@ -89,21 +100,6 @@
   text-align: center;
 }
 
-.main__img {
-  width: 100%;
-  padding: 0.5rem;
-  font-size: 30px;
-
-  @include tablet {
-    font-size: 40px;
-  }
-
-  @include desktop {
-    padding: 1rem;
-    font-size: 50px;
-  }
-}
-
 .about__list {
   display: flex;
   flex-direction: column;
@@ -111,15 +107,16 @@
   gap: 1rem;
 
   @include tablet {
+    gap: 2.25rem;
+  }
+
+  @include desktop {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .about__card {
-  //   border-radius: 25px;
-  //   border: $black 2px solid;
-
   @include tablet {
     width: 30vw;
   }

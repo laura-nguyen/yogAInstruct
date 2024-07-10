@@ -55,7 +55,7 @@ const HomePage = () => {
               <button>Practice</button>
             </NavLink>
             <NavLink to="/poses" className="nav__link--non-button">
-              Learn
+              Learn Yoga
             </NavLink>
           </div>
         </div>

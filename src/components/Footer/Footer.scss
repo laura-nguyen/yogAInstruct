@@ -7,10 +7,11 @@
   position: relative;
   bottom: 0;
   width: 100%;
+  padding: 1.5rem;
 
-  /* negative value of footer height */
-
-  padding: 1rem;
+  @include tablet {
+    padding: 2.25rem 3rem;
+  }
 
   @include desktop {
     margin: 0 auto;
@@ -23,6 +24,17 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__content--right {
+  @include tablet {
+    justify-content: flex-end;
+  }
 }
 
 .footer__text {
@@ -39,6 +51,7 @@
   gap: 0.5rem;
   @include tablet {
     padding: 1rem 0;
+    justify-content: flex-start;
   }
   &:hover {
     background-color: rgb(255, 255, 255, 0);
@@ -49,13 +62,22 @@
   width: 2rem;
 }
 
+.footer__socials {
+  display: flex;
+  justify-content: flex-end;
+  @include tablet {
+    padding: 1rem 0;
+  }
+}
+
 .footer__github-icon {
   width: 25px;
   height: 25px;
 }
 
 .footer__github-link {
-  padding: 0.5rem 0;
+  padding: 0;
+  margin: 0;
   &:hover {
     background-color: rgb(255, 255, 255, 0);
   }
