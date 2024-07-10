@@ -46,6 +46,7 @@
   border-radius: 25px;
   border: solid 1px black;
   padding: 1.5rem;
+  height: 50%;
 }
 
 .cam__img {
@@ -59,6 +60,16 @@
   text-align: center;
 
   @include desktop {
+    padding: 1rem;
     font-size: 100px;
+  }
+}
+
+.cam__nav {
+  display: flex;
+  justify-content: space-between;
+
+  @include desktop {
+    padding: 2.25rem 0;
   }
 }

@@ -14,7 +14,7 @@ const PoseCam = ({ pose }) => {
   } = pose;
   const canvasRef = useRef(null);
 
-  const [poseLabel, setPoseLabel] = useState(" ");
+  const [poseLabel, setPoseLabel] = useState("Detecting Pose");
 
   const [startingTime, setStartingTime] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -73,9 +73,9 @@ const PoseCam = ({ pose }) => {
         // use different models for each exercise
 
         const modelInfo = {
-          model: "/mountain-model/model.json",
-          metadata: "/mountain-model/model_meta.json",
-          weights: "/mountain-model/model.weights.bin",
+          model: "/model-" + `${id}` + "/model.json",
+          metadata: "/model-" + `${id}` + "/model_meta.json",
+          weights: "/model-" + `${id}` + "/model.weights.bin",
         };
 
         fetch(modelInfo.model)
@@ -147,7 +147,7 @@ const PoseCam = ({ pose }) => {
     }
 
     function gotResult(error, results) {
-      if (results && results[0].confidence > 0.9) {
+      if (results && results[0].confidence > 0.85) {
         setPoseLabel(results[0].label.toUpperCase());
       }
       classifyPose();
@@ -209,7 +209,7 @@ const PoseCam = ({ pose }) => {
           </ol>
         </div>
       </div>
-      <div>
+      <div className="cam__nav">
         <button>Back</button>
         <button>Next Pose</button>
       </div>
