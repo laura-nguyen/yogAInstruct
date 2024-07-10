@@ -14,6 +14,7 @@ const PoseCam = ({ pose }) => {
   } = pose;
   const canvasRef = useRef(null);
 
+  const [poseLabel, setPoseLabel] = useState(" ");
 
   const [startingTime, setStartingTime] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
