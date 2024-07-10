@@ -24,10 +24,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  gap: 2rem;
 
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -64,9 +66,11 @@
 
 .footer__socials {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+
   @include tablet {
     padding: 1rem 0;
+    justify-content: flex-end;
   }
 }
 

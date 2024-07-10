@@ -2,8 +2,9 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
-.instructions {
+.poses {
   margin: 1.5rem;
+  margin-bottom: 3rem;
 
   @include tablet {
     margin: 3rem 3rem;
@@ -15,71 +16,13 @@
   }
 }
 
-.instructions__list {
-  @include desktop {
-    margin: 8rem 0;
-  }
-}
-
 .poses__list {
   @include tablet {
-    @include grid-layout(2, 1.5rem);
+    @include grid-layout(2, 3rem);
   }
 
   @include desktop {
-    @include grid-layout(3, 1.5rem);
+    @include grid-layout(3, 2rem);
+    margin: 3rem 0 8rem;
   }
-}
-
-.poses__card {
-  display: inline-grid;
-  width: 100%;
-  height: auto;
-  padding: 0.5rem 0;
-  transition: all 0.9s ease;
-
-  @include tablet {
-    padding: 0;
-  }
-}
-
-.card {
-  background-color: white;
-  padding: 8px;
-  border-radius: 25px;
-  border: 1px solid black;
-}
-
-.card__img {
-  border-radius: 25px;
-  width: 100%;
-  height: 10rem;
-  object-fit: cover;
-}
-
-.card__tags {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.tag {
-  padding: 4px 8px;
-  border: 1px solid #e5eaed;
-  border-radius: 50px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #788697;
-}
-
-.name {
-  margin-top: 16px;
-}
-
-.card__details {
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
-}
-
-.card__button {
-  margin: 0 auto;
-  display: block;
 }

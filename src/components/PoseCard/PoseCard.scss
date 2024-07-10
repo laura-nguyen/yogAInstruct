@@ -32,10 +32,11 @@
 }
 
 .poses__card {
-  display: inline-grid;
+  display: flex; /* Changed from inline-grid to flex */
+  flex-direction: column; /* Ensures the content is stacked vertically */
   width: 100%;
   height: auto;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   transition: all 0.9s ease;
 
   @include tablet {
@@ -45,9 +46,16 @@
 
 .card {
   background-color: white;
-  padding: 8px;
+  padding: 1rem;
   border-radius: 25px;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensure the card grows to fill the available space */
+
+  @include tablet {
+    padding: 1.5rem;
+  }
 }
 
 .card__img {
@@ -63,12 +71,14 @@
 }
 
 .tag {
-  padding: 4px 8px;
+  padding: 4px 10px;
   border: 1px solid #e5eaed;
+  font-family: Avenir, Helvetica, sans-serif;
   border-radius: 50px;
   font-size: 12px;
   font-weight: 400;
   color: #788697;
+  text-transform: uppercase;
 }
 
 .name {
@@ -77,9 +87,13 @@
 
 .card__details {
   padding: 1rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; /* Ensure the details section grows to fill the available space */
 }
 
 .card__button {
-  margin: 0 auto;
+  margin-top: auto; /* Pushes the button to the bottom */
   display: block;
 }

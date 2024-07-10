@@ -7,7 +7,7 @@
     "pose_description": "Tree Pose is a balancing posture that strengthens the legs, ankles, and feet while improving flexibility and balance.",
     "pose_benefits": "Strengthens the legs, ankles, and feet. Improves flexibility in the hips and knees. Improves balance.",
     "image": "src/assets/images/tree pose.jpeg",
-    "categories": ["Standing Poses", "Balancing Poses"],
+    "categories": ["Standing", "Balancing"],
     "instructions": [
       "Start standing tall with feet together.",
       "Shift weight onto one foot.",
@@ -25,7 +25,7 @@
     "pose_description": "Warrior One Pose is a standing posture that stretches the chest, lungs, and shoulders while strengthening the legs, back, and arms.",
     "pose_benefits": "Stretches the chest, lungs, shoulders, neck, belly and groin (psoas). Strengthens the shoulders, arms and back muscles. Strengthens and stretches the thighs, calves and ankles.",
     "image": "src/assets/images/warrior i.jpeg",
-    "categories": ["Standing Poses", "Backbends"],
+    "categories": ["Standing", "Backbends"],
     "instructions": [
       "Start in a wide stance, feet aligned.",
       "Turn back foot 60 degrees forward.",
@@ -44,7 +44,7 @@
     "pose_description": "Warrior Two Pose is a standing posture that strengthens and stretches the legs, groin, and chest while improving stamina and focus.",
     "pose_benefits": "Strengthens and stretches the legs and ankles. Stretches the groin, chest, lungs, and shoulders. Stimulates abdominal organs. Increases stamina. Relieves backaches, especially through the second trimester of pregnancy. Therapeutic for carpal tunnel syndrome, flat feet, infertility, osteoporosis, and sciatica.",
     "image": "src/assets/images/warrior ii.jpeg",
-    "categories": ["Standing Poses"],
+    "categories": ["Standing"],
     "instructions": [
       "Start in a wide stance, feet aligned.",
       "Turn back foot 60 degrees forward.",
@@ -63,7 +63,7 @@
     "pose_description": "Chair Pose is a strengthening posture that works the lower body, core, and upper body while improving stamina and focus.",
     "pose_benefits": "Strengthens the ankles, thighs, calves, and spine. Stretches shoulders and chest. Stimulates the abdominal organs, diaphragm, and heart. Reduces flat feet. Energizes the entire body.",
     "image": "src/assets/images/chair.jpeg",
-    "categories": ["Standing Poses", "Strengthening Poses"],
+    "categories": ["Standing", "Strengthening"],
     "instructions": [
       "Start standing with feet together.",
       "Lift toes and root feet into the earth.",
@@ -81,7 +81,7 @@
     "pose_description": "Mountain Pose is a foundational posture that improves posture and balance while strengthening the legs and core.",
     "pose_benefits": "Improves posture and balance. Strengthens thighs, knees, and ankles. Firms abdomen and buttocks. Relieves sciatica.",
     "image": "src/assets/images/mountain pose.jpeg",
-    "categories": ["Standing Poses"],
+    "categories": ["Standing"],
     "instructions": [
       "Stand with feet together, big toes touching.",
       "Distribute weight evenly on both feet.",
@@ -99,7 +99,7 @@
     "pose_description": "Goddess Pose is a strengthening posture that targets the lower body, core, and upper body while improving balance and focus.",
     "pose_benefits": "Strengthens the legs, glutes, core, and upper body. Stretches the hips, chest, and shoulders. Improves balance and focus.",
     "image": "src/assets/images/goddess pose.jpeg",
-    "categories": ["Standing Poses", "Strengthening Poses"],
+    "categories": ["Standing", "Strengthening"],
     "instructions": [
       "Stand with feet wide apart, toes outward.",
       "Bend knees to 90 degrees, thighs parallel.",
