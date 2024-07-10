@@ -107,12 +107,13 @@
   gap: 1rem;
 
   @include tablet {
-    gap: 2.25rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3.25rem;
   }
 
   @include desktop {
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 7rem;
   }
 }
 

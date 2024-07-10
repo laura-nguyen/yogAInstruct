@@ -20,7 +20,7 @@
     margin: 8rem 0;
   }
 }
-.about__list {
+.instructions__steps {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -32,7 +32,7 @@
   }
 }
 
-.about__card {
+.instructions__card {
   @include tablet {
     width: 30vw;
   }
@@ -49,6 +49,6 @@
   padding: 1rem 0;
 
   @include tablet {
-    justify-content: flex-end;
+    margin-top: 2.25rem;
   }
 }
