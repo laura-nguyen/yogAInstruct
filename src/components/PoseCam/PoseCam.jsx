@@ -160,6 +160,22 @@ const PoseCam = ({ pose }) => {
       }
     }
 
+    // timer starts glitching when start moving, need to figure out how to fix this
+
+    let timeLeft = 15;
+    let downloadTimer = setInterval(() => {
+      if (timeLeft <= 0) {
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "0:00";
+        // resize font
+      } else if (timeLeft < 10) {
+        document.getElementById("countdown").innerHTML = `0:0${timeLeft}`;
+      } else {
+        document.getElementById("countdown").innerHTML = `0:${timeLeft}`;
+      }
+      timeLeft -= 1;
+    }, 1000);
+
     return () => {
       if (video) {
         video.remove();
@@ -167,22 +183,6 @@ const PoseCam = ({ pose }) => {
       myp5.remove();
     };
   }, []);
-
-  // timer starts glitching when start moving, need to figure out how to fix this
-
-  let timeLeft = 15;
-  let downloadTimer = setInterval(() => {
-    if (timeLeft <= 0) {
-      clearInterval(downloadTimer);
-      document.getElementById("countdown").innerHTML = "0:00";
-      // resize font
-    } else if (timeLeft < 10) {
-      document.getElementById("countdown").innerHTML = `0:0${timeLeft}`;
-    } else {
-      document.getElementById("countdown").innerHTML = `0:${timeLeft}`;
-    }
-    timeLeft -= 1;
-  }, 1000);
 
   return (
     <>
