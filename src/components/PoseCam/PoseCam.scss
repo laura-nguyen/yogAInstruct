@@ -54,8 +54,10 @@
 }
 
 .cam__timer {
-  background-color: white;
-  border-radius: 25px;
-  border: solid 1px black;
   padding: 1.5rem;
+  text-align: center;
+
+  @include desktop {
+    font-size: 100px;
+  }
 }

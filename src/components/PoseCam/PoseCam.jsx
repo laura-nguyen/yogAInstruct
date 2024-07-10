@@ -21,26 +21,40 @@ const PoseCam = ({ pose }) => {
   const [poseTime, setPoseTime] = useState(0);
   const [isStartPose, setIsStartPose] = useState(false);
 
-  const startYoga = (value) => {
-    setIsStartPose(value);
-  };
+  let timeLeft = 15;
+  let downloadTimer = setInterval(function () {
+    if (timeLeft <= 0) {
+      clearInterval(downloadTimer);
+      document.getElementById("countdown").innerHTML = "Finished!";
+      // resize font
+    } else if (timeLeft < 10) {
+      document.getElementById("countdown").innerHTML = `0:0${timeLeft}`;
+    } else {
+      document.getElementById("countdown").innerHTML = `0:${timeLeft}`;
+    }
+    timeLeft -= 1;
+  }, 1000);
 
-  const stopPose = () => {
-    setIsStartPose(false);
-    clearInterval(interval);
-  };
+  // const startYoga = (value) => {
+  //   setIsStartPose(value);
+  // };
 
-  const startingTimefunc = (start_time) => {
-    setStartingTime(start_time);
-  };
+  // const stopPose = () => {
+  //   setIsStartPose(false);
+  //   clearInterval(interval);
+  // };
 
-  const currentTimefunc = (current_time) => {
-    setCurrentTime(current_time);
-  };
+  // const startingTimefunc = (start_time) => {
+  //   setStartingTime(start_time);
+  // };
 
-  const poseTimefunc = (pose_time) => {
-    setPoseTime(pose_time);
-  };
+  // const currentTimefunc = (current_time) => {
+  //   setCurrentTime(current_time);
+  // };
+
+  // const poseTimefunc = (pose_time) => {
+  //   setPoseTime(pose_time);
+  // };
 
   useEffect(() => {
     let video;
@@ -178,7 +192,7 @@ const PoseCam = ({ pose }) => {
         </div>
 
         <div className="cam__content--right">
-          <div className="cam__timer">0:20</div>
+          <div className="cam__timer" id="countdown"></div>
           <img
             className="cam__img"
             src={`/${image}`}
