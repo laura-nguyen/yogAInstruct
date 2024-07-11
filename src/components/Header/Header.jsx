@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
-      <NavLink to="/" className="header__logo">
+    <header className="header" onClick={refreshPage}>
+      <NavLink to="/" className="header__logo" onClick={refreshPage}>
         <img
           className="header__logo-icon"
           src={lotusLogo}
@@ -45,16 +45,25 @@ const Header = () => {
             </svg>
           </label>
 
-          <div className="nav__links">
+          <div className="nav__links" onClick={refreshPage}>
             <NavLink
               to="/poses"
               className="nav__link--non-button"
-              onClick={handleNavLinkClick}
+              onClick={() => {
+                handleNavLinkClick;
+                refreshPage;
+              }}
             >
               Learn Yoga
             </NavLink>
             <div className="nav__link-wrapper--cta">
-              <NavLink to="/instructions" onClick={handleNavLinkClick}>
+              <NavLink
+                to="/instructions"
+                onClick={() => {
+                  handleNavLinkClick;
+                  refreshPage;
+                }}
+              >
                 <button className="nav__link--cta">Start Session</button>
               </NavLink>
             </div>
