@@ -3,6 +3,7 @@ import * as ml5 from "ml5";
 import p5 from "p5";
 import "./PoseCam.scss";
 import { NavLink } from "react-router-dom";
+import { refreshPage } from "./../../utils/helper.js";
 
 const PoseCam = ({ pose }) => {
   const {
@@ -143,10 +144,6 @@ const PoseCam = ({ pose }) => {
     };
   }, []);
 
-  const goToNextPose = () => {
-    window.location.href = `/practice/${Number(id) + 1}`;
-  };
-
   return (
     <>
       <h1>{english_name}</h1>
@@ -171,12 +168,13 @@ const PoseCam = ({ pose }) => {
           </ol>
         </div>
       </div>
-      <div className="cam__nav">
+      <div className="cam__nav" onClick={refreshPage}>
         <NavLink to="/poses">
           <button>All Poses</button>
         </NavLink>
-
-        <button onClick={goToNextPose}>Next Pose</button>
+        <NavLink to={`/practice/${Number(id) + 1}`} onClick={refreshPage}>
+          <button>Next Pose</button>
+        </NavLink>
       </div>
     </>
   );

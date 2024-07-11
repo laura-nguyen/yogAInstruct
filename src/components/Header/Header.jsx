@@ -1,6 +1,7 @@
 import "./Header.scss";
 import lotusLogo from "./../../assets/icons/logo-lotus.png";
 import { NavLink } from "react-router-dom";
+import { refreshPage } from "./../../utils/helper.js";
 
 const Header = () => {
   const handleNavLinkClick = () => {
