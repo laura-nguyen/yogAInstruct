@@ -15,7 +15,9 @@ const Footer = () => {
               src={lotusLogo}
               alt="vector icon of a lotus flower"
             />
-            Yoga AI
+            <span className="footer__logo-title">
+              yog<span className="logo__title--coral">ai</span>nstruct
+            </span>
           </NavLink>
           <p className="footer__text">© Copyright {currentYear}</p>
         </div>
