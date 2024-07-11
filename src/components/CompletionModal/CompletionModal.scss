@@ -1,0 +1,10 @@
+@import "./../../styles/partials/mixins.scss";
+@import "./../../styles/partials/typography.scss";
+@import "./../../styles/partials/variables.scss";
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1.5rem;
+}

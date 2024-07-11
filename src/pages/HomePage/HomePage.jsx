@@ -76,15 +76,7 @@ const HomePage = () => {
               their benefits, making it easy for anyone to get started.
             </p>
           </li>
-          <li className="about__card">
-            <div className="main__img">⏳</div>
 
-            <h4>Real-Time Countdown Timer</h4>
-            <p>
-              Hold each pose for the perfect duration with our real-time
-              countdown timer, ensuring you get the most out of every session.
-            </p>
-          </li>
           <li className="about__card">
             <div className="main__img">✅</div>
 

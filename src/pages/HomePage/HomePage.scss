@@ -108,12 +108,7 @@
 
   @include tablet {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 3.25rem;
-  }
-
-  @include desktop {
-    gap: 7rem;
+    justify-content: space-around;
   }
 }
 
