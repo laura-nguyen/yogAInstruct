@@ -197,7 +197,9 @@ const PoseCam = ({ pose }) => {
         <NavLink to="/poses">
           <button>Back</button>
         </NavLink>
-        <button>Next Pose</button>
+        <NavLink to={`/practice/${Number(id) + 1}`}>
+          <button>Next Pose</button>
+        </NavLink>
       </div>
     </>
   );
