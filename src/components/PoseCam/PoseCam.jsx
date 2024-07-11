@@ -22,27 +22,6 @@ const PoseCam = ({ pose }) => {
   const [poseTime, setPoseTime] = useState(0);
   const [isStartPose, setIsStartPose] = useState(false);
 
-  // const startYoga = (value) => {
-  //   setIsStartPose(value);
-  // };
-
-  // const stopPose = () => {
-  //   setIsStartPose(false);
-  //   clearInterval(interval);
-  // };
-
-  // const startingTimefunc = (start_time) => {
-  //   setStartingTime(start_time);
-  // };
-
-  // const currentTimefunc = (current_time) => {
-  //   setCurrentTime(current_time);
-  // };
-
-  // const poseTimefunc = (pose_time) => {
-  //   setPoseTime(pose_time);
-  // };
-
   useEffect(() => {
     let video;
     let poseNet;
@@ -195,7 +174,7 @@ const PoseCam = ({ pose }) => {
       </div>
       <div className="cam__nav">
         <NavLink to="/poses">
-          <button>Back</button>
+          <button>All Poses</button>
         </NavLink>
         <NavLink to={`/practice/${Number(id) + 1}`}>
           <button>Next Pose</button>
