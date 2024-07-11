@@ -150,7 +150,13 @@ const PoseCam = ({ pose }) => {
       <div className="cam-container">
         <div className="cam__content--left">
           <div ref={canvasRef}></div>
-          <div className="cam__feedback">{poseLabel}</div>
+          <div
+            className={`cam__feedback ${
+              poseLabel === "Great Form!" ? "cam__feedback--success" : ""
+            }`}
+          >
+            {poseLabel}
+          </div>
         </div>
 
         <div className="cam__content--right">
@@ -159,7 +165,9 @@ const PoseCam = ({ pose }) => {
             src={`/${image}`}
             alt={`${english_name} pose`}
           />
+
           <ol className="cam__instructions">
+            <h4>Step by Step</h4>
             {instructions.map((step, index) => (
               <li className="cam__instructions-step" key={index}>
                 {step}

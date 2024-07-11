@@ -23,11 +23,12 @@ header {
 }
 
 .header__logo {
-  padding: 1rem;
+  padding: 1.5rem;
   color: black;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 20px;
   @include tablet {
     padding: 1rem 0;
   }
@@ -91,7 +92,7 @@ nav svg {
   }
   .open-sidebar-button,
   .close-sidebar-button {
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
   }
   #sidebar-active:checked ~ .links-container {
