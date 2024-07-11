@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import * as ml5 from "ml5";
 import p5 from "p5";
 import "./PoseCam.scss";
+import { NavLink } from "react-router-dom";
 
 const PoseCam = ({ pose }) => {
   const {
@@ -14,7 +15,7 @@ const PoseCam = ({ pose }) => {
   } = pose;
   const canvasRef = useRef(null);
 
-  const [poseLabel, setPoseLabel] = useState("Detecting Pose");
+  const [poseLabel, setPoseLabel] = useState("Detecting Pose...");
 
   const [startingTime, setStartingTime] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -147,8 +148,8 @@ const PoseCam = ({ pose }) => {
     }
 
     function gotResult(error, results) {
-      if (results && results[0].confidence > 0.85) {
-        setPoseLabel(results[0].label.toUpperCase());
+      if (results && results[0].confidence > 0.9) {
+        setPoseLabel(results[0].label);
       }
       classifyPose();
     }
@@ -159,22 +160,6 @@ const PoseCam = ({ pose }) => {
         skeleton = poses[0].skeleton;
       }
     }
-
-    // timer starts glitching when start moving, need to figure out how to fix this
-
-    let timeLeft = 15;
-    let downloadTimer = setInterval(() => {
-      if (timeLeft <= 0) {
-        clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "0:00";
-        // resize font
-      } else if (timeLeft < 10) {
-        document.getElementById("countdown").innerHTML = `0:0${timeLeft}`;
-      } else {
-        document.getElementById("countdown").innerHTML = `0:${timeLeft}`;
-      }
-      timeLeft -= 1;
-    }, 1000);
 
     return () => {
       if (video) {
@@ -194,7 +179,6 @@ const PoseCam = ({ pose }) => {
         </div>
 
         <div className="cam__content--right">
-          <div className="cam__timer" id="countdown"></div>
           <img
             className="cam__img"
             src={`/${image}`}
@@ -210,7 +194,9 @@ const PoseCam = ({ pose }) => {
         </div>
       </div>
       <div className="cam__nav">
-        <button>Back</button>
+        <NavLink to="/poses">
+          <button>Back</button>
+        </NavLink>
         <button>Next Pose</button>
       </div>
     </>
