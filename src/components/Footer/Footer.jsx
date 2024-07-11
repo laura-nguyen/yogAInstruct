@@ -19,7 +19,7 @@ const Footer = () => {
               yog<span className="logo__title--coral">ai</span>nstruct
             </span>
           </NavLink>
-          <p className="footer__text">© Copyright {currentYear}</p>
+          <p>© Copyright {currentYear}</p>
         </div>
 
         <div className="footer__content--right">
@@ -36,7 +36,7 @@ const Footer = () => {
               />
             </a>
           </div>
-          <p className="footer__text">Made With ❤️ & 💧 by Laura Nguyen</p>
+          <p>Made With ❤️ & 💧 by Laura Nguyen</p>
         </div>
       </div>
     </footer>

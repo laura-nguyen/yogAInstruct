@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <header className="header" onClick={refreshPage}>
-      <NavLink to="/" className="header__logo" onClick={refreshPage}>
+    <header className="header">
+      <NavLink to="/" className="header__logo">
         <img
           className="header__logo-icon"
           src={lotusLogo}
