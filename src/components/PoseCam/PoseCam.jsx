@@ -125,6 +125,11 @@ const PoseCam = ({ pose }) => {
     function gotResult(error, results) {
       if (results && results[0].confidence > 0.9) {
         setPoseLabel(results[0].label);
+        if (results[0].label === "Great Form!") {
+          document.body.classList.add("great-form");
+        } else {
+          document.body.classList.remove("great-form");
+        }
       }
       classifyPose();
     }
@@ -176,14 +181,14 @@ const PoseCam = ({ pose }) => {
           </ol>
         </div>
       </div>
-      <div className="cam__nav" onClick={refreshPage}>
+      {/* <div className="cam__nav" onClick={refreshPage}>
         <NavLink to="/poses">
           <button>All Poses</button>
         </NavLink>
         <NavLink to={`/practice/${Number(id) + 1}`} onClick={refreshPage}>
           <button>Next Pose</button>
         </NavLink>
-      </div>
+      </div> */}
     </>
   );
 };

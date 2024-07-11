@@ -2,7 +2,7 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
-.practice {
+.session {
   margin: 1.5rem;
 
   @include tablet {
@@ -15,7 +15,7 @@
   }
 }
 
-.practice__nav {
+.session__nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -25,6 +25,7 @@
   @include tablet {
     flex-direction: row;
     padding-top: 2.25rem;
+    justify-content: flex-end;
     padding-bottom: 0;
   }
 

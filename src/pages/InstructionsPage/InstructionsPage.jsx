@@ -28,7 +28,7 @@ const InstructionsPage = () => {
         </ul>
       </div>
       <div className="instructions__proceed">
-        <NavLink to="/practice/0">
+        <NavLink to="/session/0">
           <button>I'm ready!</button>
         </NavLink>
       </div>

@@ -4,8 +4,7 @@
 
 .footer {
   background-color: rgb(255, 255, 255, 0.4);
-  position: relative;
-  bottom: 0;
+
   width: 100%;
   padding: 1.5rem;
 
@@ -75,6 +74,7 @@
 
   @include tablet {
     padding: 1rem 0;
+    padding-bottom: 1.25rem;
     justify-content: flex-end;
   }
 }

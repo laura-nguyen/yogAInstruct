@@ -58,7 +58,8 @@
 
   @include desktop {
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: flex-start;
+    gap: 2.25rem;
   }
 }
 
@@ -80,12 +81,12 @@
 }
 
 .cam__feedback {
-  background-color: white;
+  text-align: center;
   border-radius: 25px;
-  border: solid 1px black;
+  font-size: 20px;
   padding: 1.5rem;
   height: 50%;
-  border: 2px solid transparent;
+  border: 5px solid transparent;
 }
 
 .cam__img {
@@ -105,6 +106,10 @@
 
 .cam__feedback--success {
   border-color: green;
+  background-color: rgb(255, 255, 255, 0);
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .cam__timer {
@@ -120,9 +125,12 @@
 .cam__nav {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 2.5rem 0 1rem;
+  gap: 1rem;
 
   @include tablet {
+    flex-direction: row;
     padding-top: 2.25rem;
     padding-bottom: 0;
   }

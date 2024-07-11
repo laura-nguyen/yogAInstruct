@@ -1,23 +1,23 @@
+import "./SessionCamPage.scss";
 import PoseCam from "../../components/PoseCam/PoseCam";
 import poses from "../../data/yoga_poses.json";
 import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { refreshPage } from "./../../utils/helper.js";
-import "./PoseCamPage.scss";
 
-const PoseCamPage = () => {
+const SessionCamPage = () => {
   const { poseId } = useParams();
   const pose = poses[poseId];
   return (
-    <main className="practice">
+    <main className="session">
       <PoseCam pose={pose} />
-      <div className="practice__nav" onClick={refreshPage}>
-        <NavLink to="/poses" onClick={refreshPage}>
-          <button>Back to Poses</button>
+      <div className="session__nav" onClick={refreshPage}>
+        <NavLink to={`/session/${Number(poseId) + 1}`} onClick={refreshPage}>
+          <button>Next Pose</button>
         </NavLink>
       </div>
     </main>
   );
 };
 
-export default PoseCamPage;
+export default SessionCamPage;
