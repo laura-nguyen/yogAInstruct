@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import PosesPage from "./pages/PosesPage/PosesPage";
 import PoseCamPage from "./pages/PoseCamPage/PoseCamPage";
 import InstructionsPage from "./pages/InstructionsPage/InstructionsPage";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import "./App.scss";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/poses" element={<PosesPage />} />
           <Route path="/instructions" element={<InstructionsPage />} />
           <Route path="/practice/:poseId" element={<PoseCamPage />} />
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
