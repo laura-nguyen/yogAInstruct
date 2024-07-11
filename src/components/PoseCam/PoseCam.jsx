@@ -17,11 +17,6 @@ const PoseCam = ({ pose }) => {
 
   const [poseLabel, setPoseLabel] = useState("Detecting Pose...");
 
-  const [startingTime, setStartingTime] = useState(0);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [poseTime, setPoseTime] = useState(0);
-  const [isStartPose, setIsStartPose] = useState(false);
-
   useEffect(() => {
     let video;
     let poseNet;
@@ -148,6 +143,10 @@ const PoseCam = ({ pose }) => {
     };
   }, []);
 
+  const goToNextPose = () => {
+    window.location.href = `/practice/${Number(id) + 1}`;
+  };
+
   return (
     <>
       <h1>{english_name}</h1>
@@ -176,9 +175,8 @@ const PoseCam = ({ pose }) => {
         <NavLink to="/poses">
           <button>All Poses</button>
         </NavLink>
-        <NavLink to={`/practice/${Number(id) + 1}`}>
-          <button>Next Pose</button>
-        </NavLink>
+
+        <button onClick={goToNextPose}>Next Pose</button>
       </div>
     </>
   );
