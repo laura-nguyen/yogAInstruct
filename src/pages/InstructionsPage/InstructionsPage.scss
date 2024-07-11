@@ -17,14 +17,14 @@
 
 .instructions__list {
   @include desktop {
-    margin: 8rem 0;
+    margin: 4rem 0 8rem;
   }
 }
 .instructions__steps {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 1rem;
+  gap: 2.25rem;
 
   @include tablet {
     flex-direction: row;
@@ -40,6 +40,17 @@
   @include desktop {
     width: 25rem;
   }
+}
+
+.instructions__number {
+  font-size: 50px;
+}
+
+.instructions__img {
+  border-radius: 25px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 .instructions__proceed {

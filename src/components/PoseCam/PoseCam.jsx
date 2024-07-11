@@ -160,7 +160,7 @@ const PoseCam = ({ pose }) => {
               poseLabel === "Great Form!" ? "cam__feedback--success" : ""
             }`}
           >
-            {poseLabel}
+            {poseLabel === "Great Form!" && "✅"} {poseLabel}
           </div>
         </div>
 
