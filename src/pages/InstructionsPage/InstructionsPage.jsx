@@ -12,7 +12,9 @@ const InstructionsPage = () => {
         <ul className="instructions__steps">
           <li className="instructions__card">
             <div className="instructions__number">1️⃣</div>
-            <p>Accept camera access and wait for the webcam to load.</p>
+            <p className="instructions__text">
+              Accept camera access and wait for the webcam to load.
+            </p>
             <img
               className="instructions__img"
               src={cameraAsk}
@@ -21,7 +23,7 @@ const InstructionsPage = () => {
           </li>
           <li className="instructions__card">
             <div className="instructions__number">2️⃣</div>
-            <p>
+            <p className="instructions__text">
               Make sure that the key points are visible on your body and there
               are no background distractions.
             </p>
@@ -35,7 +37,7 @@ const InstructionsPage = () => {
           </li>
           <li className="instructions__card">
             <div className="instructions__number">3️⃣</div>
-            <p>
+            <p className="instructions__text">
               Follow the pose visual and mimic that on camera. You will get
               feedback on your form.
             </p>

@@ -46,6 +46,16 @@
   font-size: 50px;
 }
 
+.instructions__text {
+  @include tablet {
+    height: 7rem;
+  }
+
+  @include desktop {
+    height: 5rem;
+  }
+}
+
 .instructions__img {
   border-radius: 25px;
   width: 100%;
