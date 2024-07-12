@@ -4,7 +4,9 @@
 
 .footer {
   background-color: rgb(255, 255, 255, 0.4);
+}
 
+.footer__wrapper {
   width: 100%;
   padding: 1.5rem;
 
@@ -15,6 +17,7 @@
   @include desktop {
     margin: 0 auto;
     padding: 2.25rem 8rem;
+    max-width: 80rem;
   }
 }
 

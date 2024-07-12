@@ -31,9 +31,9 @@
   }
 }
 
-.poses__card {
-  display: flex; /* Changed from inline-grid to flex */
-  flex-direction: column; /* Ensures the content is stacked vertically */
+.poses__card-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   padding: 1rem 0;
@@ -48,10 +48,10 @@
   background-color: white;
   padding: 1rem;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 1px solid $dark-gray;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Ensure the card grows to fill the available space */
+  flex-grow: 1;
 
   @include tablet {
     padding: 1.5rem;
@@ -72,12 +72,12 @@
 
 .tag {
   padding: 4px 10px;
-  border: 1px solid #e5eaed;
+  border: 1px solid $border-1;
   font-family: Avenir, Helvetica, sans-serif;
   border-radius: 50px;
   font-size: 12px;
   font-weight: 400;
-  color: #788697;
+  color: $dark-gray;
   text-transform: uppercase;
 }
 
@@ -93,7 +93,30 @@
   flex-grow: 1; /* Ensure the details section grows to fill the available space */
 }
 
+.card__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .card__button {
   margin-top: auto; /* Pushes the button to the bottom */
   display: block;
+}
+
+.card__button--secondary {
+  font-size: 0.8rem !important;
+  padding: 1rem;
+  font-family: Avenir, Helvetica, sans-serif;
+  color: $dark-gray;
+
+  @include tablet {
+    font-size: 1rem !important;
+  }
 }
