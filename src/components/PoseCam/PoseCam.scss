@@ -87,6 +87,10 @@
   padding: 1.5rem;
   height: 50%;
   border: 5px solid transparent;
+
+  @include desktop {
+    font-size: 30px;
+  }
 }
 
 .cam__img {
@@ -119,23 +123,5 @@
   @include desktop {
     padding: 1rem;
     font-size: 100px;
-  }
-}
-
-.cam__nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 2.5rem 0 1rem;
-  gap: 1rem;
-
-  @include tablet {
-    flex-direction: row;
-    padding-top: 2.25rem;
-    padding-bottom: 0;
-  }
-
-  @include desktop {
-    padding: 2.25rem 0;
   }
 }

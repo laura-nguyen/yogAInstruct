@@ -15,7 +15,18 @@
       "Press hands together in prayer position at chest.",
       "Raise arms overhead with palms touching.",
       "Keep gaze forward and hold."
-    ]
+    ],
+    "common_mistakes": [
+      "Not aligning the hips",
+      "Knee not pointing forward",
+      "Shoulders not relaxed"
+    ],
+    "tips": [
+      "Engage your core",
+      "Keep your breathing steady",
+      "Focus on a fixed point to maintain balance"
+    ],
+    "video_url": "https://www.example.com/tree-pose-video"
   },
   {
     "id": "1",
@@ -34,7 +45,18 @@
       "Raise arms overhead, palms facing each other.",
       "Lift ribcage and tuck pelvis.",
       "Gaze forward and hold."
-    ]
+    ],
+    "common_mistakes": [
+      "Back heel not grounded",
+      "Front knee collapsing inward",
+      "Arching the lower back excessively"
+    ],
+    "tips": [
+      "Engage your core",
+      "Press into the back heel",
+      "Keep your hips squared to the front"
+    ],
+    "video_url": "https://www.example.com/warrior-one-pose-video"
   },
   {
     "id": "2",
@@ -53,7 +75,18 @@
       "Rotate thighs outward.",
       "Tuck pelvis and lift ribcage.",
       "Gaze over front fingers and hold."
-    ]
+    ],
+    "common_mistakes": [
+      "Front knee collapsing inward",
+      "Back arm sagging",
+      "Torso leaning forward"
+    ],
+    "tips": [
+      "Engage your core",
+      "Keep your arms at shoulder height",
+      "Distribute your weight evenly between both legs"
+    ],
+    "video_url": "https://www.example.com/warrior-two-pose-video"
   },
   {
     "id": "3",
@@ -71,7 +104,18 @@
       "Tuck pelvis and lift ribcage.",
       "Raise arms overhead, biceps by ears.",
       "Gaze forward and hold."
-    ]
+    ],
+    "common_mistakes": [
+      "Knees going past toes",
+      "Back arching",
+      "Shoulders lifted"
+    ],
+    "tips": [
+      "Keep weight in your heels",
+      "Engage your core",
+      "Relax your shoulders"
+    ],
+    "video_url": "https://www.example.com/chair-pose-video"
   },
   {
     "id": "4",
@@ -89,7 +133,18 @@
       "Relax shoulders, arms at sides.",
       "Lift chest and gaze forward.",
       "Hold the position."
-    ]
+    ],
+    "common_mistakes": [
+      "Locking the knees",
+      "Shoulders tense",
+      "Weight unevenly distributed"
+    ],
+    "tips": [
+      "Engage your thighs",
+      "Keep your breathing steady",
+      "Distribute weight evenly on both feet"
+    ],
+    "video_url": "https://www.example.com/mountain-pose-video"
   },
   {
     "id": "5",
@@ -107,6 +162,17 @@
       "Bend elbows, forearms parallel to ground.",
       "Place palms forward or in prayer position.",
       "Gaze forward and hold."
-    ]
+    ],
+    "common_mistakes": [
+      "Knees collapsing inward",
+      "Arching the lower back",
+      "Shoulders lifted"
+    ],
+    "tips": [
+      "Engage your core",
+      "Press your knees outward",
+      "Keep your chest lifted"
+    ],
+    "video_url": "https://www.example.com/goddess-pose-video"
   }
 ]
