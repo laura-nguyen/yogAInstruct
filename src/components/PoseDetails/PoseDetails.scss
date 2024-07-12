@@ -2,6 +2,95 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
-.pose-details__img {
-  width: 100%;
+.pose-details {
+  &__img {
+    width: 100%;
+    border: 1px solid $dark-gray;
+    border-radius: 25px;
+    // @include desktop {
+    //   width: 50%;
+    // }
+  }
+
+  &__sanskrit {
+    font-weight: 400;
+    text-align: center;
+
+    font-size: 0.9375rem;
+    padding-top: 1rem;
+
+    @include tablet {
+      font-size: 1rem;
+      padding-top: 8px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    @include tablet {
+      gap: 2.25rem;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &--left {
+      display: flex;
+      flex-direction: column;
+
+      @include tablet {
+        width: 50%;
+      }
+    }
+
+    &--right {
+      @include tablet {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.pose-details__description {
+  font-size: 1.5rem;
+  text-align: center;
+  @include tablet {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+}
+
+.card__tags--description {
+  justify-content: center;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+}
+
+.tag--white {
+  background-color: $white;
+  border-color: $dark-gray;
+  margin-bottom: 1rem;
+}
+
+.pose-details__grid {
+  @include tablet {
+    @include grid-layout(2, 3rem);
+    padding: 1.5rem 0;
+  }
+}
+
+.pose-details__benefits {
+  background-color: $white;
+  padding: 2.25rem;
+  border-radius: 25px;
+  border: 1px solid $dark-gray;
+}
+
+.pose-details__list--unordered {
+  list-style-type: circle;
+  margin: 0.5em 0;
+  margin-left: 1.5rem;
+  padding-left: 10px;
 }

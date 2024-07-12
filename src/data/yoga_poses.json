@@ -5,7 +5,11 @@
     "sanskrit_name_adapted": "Vrksasana",
     "sanskrit_name": "Vṛkṣāsana",
     "pose_description": "Tree Pose is a balancing posture that strengthens the legs, ankles, and feet while improving flexibility and balance.",
-    "pose_benefits": "Strengthens the legs, ankles, and feet. Improves flexibility in the hips and knees. Improves balance.",
+    "pose_benefits": [
+      "Strengthens the legs, ankles, and feet.",
+      "Improves flexibility in the hips and knees.",
+      "Improves balance."
+    ],
     "image": "src/assets/images/tree pose.jpeg",
     "categories": ["Standing", "Balancing"],
     "instructions": [
@@ -25,8 +29,7 @@
       "Engage your core",
       "Keep your breathing steady",
       "Focus on a fixed point to maintain balance"
-    ],
-    "video_url": "https://www.example.com/tree-pose-video"
+    ]
   },
   {
     "id": "1",
@@ -34,7 +37,11 @@
     "sanskrit_name_adapted": "Virabhadrasana One",
     "sanskrit_name": "Vīrabhadrāsana I",
     "pose_description": "Warrior One Pose is a standing posture that stretches the chest, lungs, and shoulders while strengthening the legs, back, and arms.",
-    "pose_benefits": "Stretches the chest, lungs, shoulders, neck, belly and groin (psoas). Strengthens the shoulders, arms and back muscles. Strengthens and stretches the thighs, calves and ankles.",
+    "pose_benefits": [
+      "Stretches the chest, lungs, shoulders, neck, belly and groin (psoas).",
+      "Strengthens the shoulders, arms and back muscles.",
+      "Strengthens and stretches the thighs, calves and ankles."
+    ],
     "image": "src/assets/images/warrior i.jpeg",
     "categories": ["Standing", "Backbends"],
     "instructions": [
@@ -55,8 +62,7 @@
       "Engage your core",
       "Press into the back heel",
       "Keep your hips squared to the front"
-    ],
-    "video_url": "https://www.example.com/warrior-one-pose-video"
+    ]
   },
   {
     "id": "2",
@@ -64,7 +70,14 @@
     "sanskrit_name_adapted": "Virabhadrasana Two",
     "sanskrit_name": "Vīrabhadrāsana II",
     "pose_description": "Warrior Two Pose is a standing posture that strengthens and stretches the legs, groin, and chest while improving stamina and focus.",
-    "pose_benefits": "Strengthens and stretches the legs and ankles. Stretches the groin, chest, lungs, and shoulders. Stimulates abdominal organs. Increases stamina. Relieves backaches, especially through the second trimester of pregnancy. Therapeutic for carpal tunnel syndrome, flat feet, infertility, osteoporosis, and sciatica.",
+    "pose_benefits": [
+      "Strengthens and stretches the legs and ankles.",
+      "Stretches the groin, chest, lungs, and shoulders.",
+      "Stimulates abdominal organs.",
+      "Increases stamina.",
+      "Relieves backaches, especially through the second trimester of pregnancy.",
+      "Therapeutic for carpal tunnel syndrome, flat feet, infertility, osteoporosis, and sciatica."
+    ],
     "image": "src/assets/images/warrior ii.jpeg",
     "categories": ["Standing"],
     "instructions": [
@@ -85,8 +98,7 @@
       "Engage your core",
       "Keep your arms at shoulder height",
       "Distribute your weight evenly between both legs"
-    ],
-    "video_url": "https://www.example.com/warrior-two-pose-video"
+    ]
   },
   {
     "id": "3",
@@ -94,7 +106,13 @@
     "sanskrit_name_adapted": "Utkatasana",
     "sanskrit_name": "Utkaṭāsana",
     "pose_description": "Chair Pose is a strengthening posture that works the lower body, core, and upper body while improving stamina and focus.",
-    "pose_benefits": "Strengthens the ankles, thighs, calves, and spine. Stretches shoulders and chest. Stimulates the abdominal organs, diaphragm, and heart. Reduces flat feet. Energizes the entire body.",
+    "pose_benefits": [
+      "Strengthens the ankles, thighs, calves, and spine.",
+      "Stretches shoulders and chest.",
+      "Stimulates the abdominal organs, diaphragm, and heart.",
+      "Reduces flat feet.",
+      "Energizes the entire body."
+    ],
     "image": "src/assets/images/chair.jpeg",
     "categories": ["Standing", "Strengthening"],
     "instructions": [
@@ -114,8 +132,7 @@
       "Keep weight in your heels",
       "Engage your core",
       "Relax your shoulders"
-    ],
-    "video_url": "https://www.example.com/chair-pose-video"
+    ]
   },
   {
     "id": "4",
@@ -123,7 +140,12 @@
     "sanskrit_name_adapted": "Tadasana",
     "sanskrit_name": "Tāḍāsana",
     "pose_description": "Mountain Pose is a foundational posture that improves posture and balance while strengthening the legs and core.",
-    "pose_benefits": "Improves posture and balance. Strengthens thighs, knees, and ankles. Firms abdomen and buttocks. Relieves sciatica.",
+    "pose_benefits": [
+      "Improves posture and balance.",
+      "Strengthens thighs, knees, and ankles.",
+      "Firms abdomen and buttocks.",
+      "Relieves sciatica."
+    ],
     "image": "src/assets/images/mountain pose.jpeg",
     "categories": ["Standing"],
     "instructions": [
@@ -143,8 +165,7 @@
       "Engage your thighs",
       "Keep your breathing steady",
       "Distribute weight evenly on both feet"
-    ],
-    "video_url": "https://www.example.com/mountain-pose-video"
+    ]
   },
   {
     "id": "5",
@@ -152,7 +173,11 @@
     "sanskrit_name_adapted": "Utkata Konasana",
     "sanskrit_name": "Utkaṭa Koṇāsana",
     "pose_description": "Goddess Pose is a strengthening posture that targets the lower body, core, and upper body while improving balance and focus.",
-    "pose_benefits": "Strengthens the legs, glutes, core, and upper body. Stretches the hips, chest, and shoulders. Improves balance and focus.",
+    "pose_benefits": [
+      "Strengthens the legs, glutes, core, and upper body.",
+      "Stretches the hips, chest, and shoulders.",
+      "Improves balance and focus."
+    ],
     "image": "src/assets/images/goddess pose.jpeg",
     "categories": ["Standing", "Strengthening"],
     "instructions": [
@@ -172,7 +197,6 @@
       "Engage your core",
       "Press your knees outward",
       "Keep your chest lifted"
-    ],
-    "video_url": "https://www.example.com/goddess-pose-video"
+    ]
   }
 ]

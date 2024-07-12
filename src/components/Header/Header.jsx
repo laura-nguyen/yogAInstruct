@@ -1,5 +1,7 @@
 import "./Header.scss";
 import lotusLogo from "./../../assets/icons/logo-lotus.png";
+import exitIcon from "./../../assets/icons/exit.svg";
+import hamburgerMenuIcon from "./../../assets/icons/hamburger-menu.svg";
 import { NavLink } from "react-router-dom";
 import { refreshPage } from "./../../utils/helper.js";
 
@@ -23,26 +25,12 @@ const Header = () => {
       <nav>
         <input type="checkbox" id="sidebar-active" />
         <label htmlFor="sidebar-active" className="open-sidebar-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="32"
-            viewBox="0 -960 960 960"
-            width="32"
-          >
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-          </svg>
+          <img src={hamburgerMenuIcon} alt="hamburger menu icon" />
         </label>
         <label id="overlay" htmlFor="sidebar-active"></label>
         <div className="links-container">
           <label htmlFor="sidebar-active" className="close-sidebar-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="32"
-              viewBox="0 -960 960 960"
-              width="32"
-            >
-              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg>
+            <img src={exitIcon} alt="exit icon" />
           </label>
 
           <div className="nav__links" onClick={refreshPage}>

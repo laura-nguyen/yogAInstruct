@@ -52,7 +52,7 @@ const HomePage = () => {
           </p>
           <div className="main__cta-links">
             <NavLink to="/instructions">
-              <button>Practice</button>
+              <button>Start Session</button>
             </NavLink>
             <NavLink to="/poses" className="nav__link--non-button">
               Learn Yoga
