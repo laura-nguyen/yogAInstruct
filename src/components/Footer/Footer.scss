@@ -4,94 +4,94 @@
 
 .footer {
   background-color: rgb(255, 255, 255, 0.4);
-}
 
-.footer__wrapper {
-  width: 100%;
-  padding: 1.5rem;
+  &__wrapper {
+    width: 100%;
+    padding: 1.5rem;
 
-  @include tablet {
-    padding: 2.25rem 3rem;
+    @include tablet {
+      padding: 2.25rem 3rem;
+    }
+
+    @include desktop {
+      margin: 0 auto;
+      padding: 2.25rem 8rem;
+      max-width: 80rem;
+    }
   }
 
-  @include desktop {
-    margin: 0 auto;
-    padding: 2.25rem 8rem;
-    max-width: 80rem;
+  &__logo-title {
+    font-size: 20px;
   }
-}
 
-.footer__logo-title {
-  font-size: 20px;
-}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
 
-.footer__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
 
-  @include tablet {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0;
+    &--right {
+      @include tablet {
+        justify-content: flex-end;
+      }
+    }
   }
-}
 
-.footer__content--right {
-  @include tablet {
-    justify-content: flex-end;
+  &__text {
+    margin: 0.5rem 0;
+    font-size: 0.9375rem;
   }
-}
 
-.footer__text {
-  margin: 0.5rem 0;
-  font-size: 0.9375rem;
-}
+  &__logo {
+    padding: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    @include tablet {
+      padding: 1rem 0;
+      justify-content: flex-start;
+    }
+    &:hover {
+      background-color: rgb(255, 255, 255, 0);
+    }
 
-.footer__logo {
-  padding: 1rem;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  @include tablet {
-    padding: 1rem 0;
-    justify-content: flex-start;
+    &-icon {
+      width: 2rem;
+    }
   }
-  &:hover {
-    background-color: rgb(255, 255, 255, 0);
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+
+    @include tablet {
+      padding: 1rem 0;
+      padding-bottom: 1.25rem;
+      justify-content: flex-end;
+    }
   }
-}
 
-.footer__logo-icon {
-  width: 2rem;
-}
-
-.footer__socials {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1.5rem;
-
-  @include tablet {
-    padding: 1rem 0;
-    padding-bottom: 1.25rem;
-    justify-content: flex-end;
+  &__github-icon {
+    width: 25px;
+    height: 25px;
   }
-}
 
-.footer__github-icon {
-  width: 25px;
-  height: 25px;
-}
-
-.footer__github-link {
-  line-height: 0;
-  padding: 0;
-  margin: 0;
-  &:hover {
-    background-color: rgb(255, 255, 255, 0);
+  &__github-link {
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    &:hover {
+      background-color: rgb(255, 255, 255, 0);
+    }
   }
 }

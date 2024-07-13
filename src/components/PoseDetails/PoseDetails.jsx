@@ -2,7 +2,6 @@ import "./PoseDetails.scss";
 
 const PoseDetails = ({ pose }) => {
   const {
-    id,
     english_name,
     sanskrit_name,
     sanskrit_name_adapted,

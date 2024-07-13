@@ -88,6 +88,10 @@
   border: 1px solid $dark-gray;
 }
 
+.pose-details__description--benefits {
+  height: auto;
+}
+
 .pose-details__list--unordered {
   list-style-type: circle;
   margin: 0.5em 0;
