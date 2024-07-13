@@ -8,7 +8,7 @@ const CompletionModal = ({ show, onClose }) => {
   }
 
   return (
-    <div className="modal">
+    <div className="modal__overlay">
       <div className="modal__content">
         <button className="modal__close" onClick={onClose}>
           <img src={closeIcon} alt="Close" />

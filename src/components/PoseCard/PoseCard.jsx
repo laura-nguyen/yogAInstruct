@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 const PoseCard = ({ pose }) => {
   const { id, image, english_name, pose_description } = pose;
   return (
-    <div className="poses__card-wrapper">
-      <div className="card">
+    <div className="card">
+      <div className="card__container">
         <img className="card__img" src={image} alt="yoga pose" />
 
         <div className="card__details">
@@ -17,7 +17,7 @@ const PoseCard = ({ pose }) => {
                 </span>
               ))}
             </div>
-            <h4 className="name">{english_name}</h4>
+            <h4 className="card__name">{english_name}</h4>
             <p>{pose_description}</p>
           </div>
           <div className="card__btns">

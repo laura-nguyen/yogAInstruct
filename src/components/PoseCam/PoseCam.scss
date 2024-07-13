@@ -2,12 +2,6 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
-.cam__header--practice {
-  display: flex;
-  align-items: baseline;
-  gap: 1.5rem;
-}
-
 .cam-container {
   display: flex;
   flex-direction: column;
@@ -21,132 +15,146 @@
     flex-direction: row;
     gap: 2.25rem;
   }
-}
 
-.cam-container canvas {
-  height: auto;
-  border-radius: 25px;
+  canvas {
+    height: auto;
+    border-radius: 25px;
 
-  @include mobile {
-    width: 100% !important;
-    height: auto !important;
-  }
+    @include mobile {
+      width: 100% !important;
+      height: auto !important;
+    }
 
-  @include tablet {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.cam__icon-link {
-  &:hover {
-    img {
-      transition: transform 0.3s ease;
-      transform: translateX(10px);
+    @include tablet {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
-.cam__button--back {
-  height: 100%;
-  width: 20px;
-  padding-bottom: 5px;
-}
-
-.cam__content--left {
-  display: flex;
-  flex-direction: column;
-  gap: 1.15rem;
-
-  @include tablet {
-    gap: 2.25rem;
-    justify-content: center;
-  }
-}
-
-.cam__content--right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.5rem;
-
-  @include tablet {
-    flex-direction: row;
-
-    gap: 2.25rem;
+.cam {
+  &__header {
+    &--practice {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+    }
   }
 
-  @include desktop {
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 2.25rem;
-  }
-}
-
-.cam__instructions {
-  @include tablet {
-    width: 60%;
+  &__icon-link {
+    &:hover {
+      img {
+        transition: transform 0.3s ease;
+        transform: translateX(10px);
+      }
+    }
   }
 
-  @include desktop {
+  &__button {
+    &--back {
+      height: 100%;
+      width: 20px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__content {
+    &--left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+
+      @include tablet {
+        gap: 2.25rem;
+        justify-content: center;
+      }
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+
+      @include tablet {
+        flex-direction: row;
+
+        gap: 2.25rem;
+      }
+
+      @include desktop {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2.25rem;
+      }
+    }
+  }
+
+  &__instructions {
+    @include tablet {
+      width: 60%;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+
+    &-step {
+      list-style-type: decimal;
+      margin: 0.5em 0;
+      margin-left: 1.5rem;
+      padding-left: 10px;
+
+      &::marker {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__feedback {
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 1.5rem;
+    height: 50%;
+    border: 5px solid transparent;
+
+    @include desktop {
+      font-size: 30px;
+    }
+
+    &--success {
+      border-color: green;
+      background-color: rgb(255, 255, 255, 0);
+      font-size: 40px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__img {
     width: 100%;
-  }
-}
+    border-radius: 1.5625rem;
+    border: solid 1px $black;
 
-.cam__instructions-step {
-  list-style-type: decimal;
-  margin: 0.5em 0;
-  margin-left: 1.5rem;
-  padding-left: 10px;
+    @include tablet {
+      height: fit-content;
+      width: 40%;
+    }
 
-  &::marker {
-    font-weight: bold;
-  }
-}
-
-.cam__feedback {
-  text-align: center;
-  border-radius: 25px;
-  font-size: 20px;
-  padding: 1.5rem;
-  height: 50%;
-  border: 5px solid transparent;
-
-  @include desktop {
-    font-size: 30px;
-  }
-}
-
-.cam__img {
-  width: 100%;
-  border-radius: 1.5625rem;
-  border: solid 1px black;
-
-  @include tablet {
-    height: fit-content;
-    width: 40%;
+    @include desktop {
+      width: 100%;
+    }
   }
 
-  @include desktop {
-    width: 100%;
-  }
-}
+  &__timer {
+    padding: 1.5rem;
+    text-align: center;
 
-.cam__feedback--success {
-  border-color: green;
-  background-color: rgb(255, 255, 255, 0);
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.cam__timer {
-  padding: 1.5rem;
-  text-align: center;
-
-  @include desktop {
-    padding: 1rem;
-    font-size: 100px;
+    @include desktop {
+      padding: 1rem;
+      font-size: 100px;
+    }
   }
 }

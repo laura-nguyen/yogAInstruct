@@ -157,3 +157,20 @@ body.great-form {
   );
   transition: all 1.5s ease;
 }
+
+.tag {
+  padding: 4px 10px;
+  border: 1px solid $border-1;
+  font-family: Avenir, Helvetica, sans-serif;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 400;
+  color: $dark-gray;
+  text-transform: uppercase;
+
+  &--white {
+    background-color: $white;
+    border-color: $dark-gray;
+    margin-bottom: 1rem;
+  }
+}
