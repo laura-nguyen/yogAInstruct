@@ -71,10 +71,10 @@ h5 {
   font-size: 0.875rem;
 
   display: inline-block;
-  padding: 1px 20px; // Adjust the padding to your preference
-  border-radius: 50px; // Adjust the border-radius to create the oval shape
+  padding: 0.0625rem 1.25rem;
+  border-radius: 3.125rem;
   text-align: center;
-  border: solid $black 1px;
+  border: solid $black 0.0625rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
 
@@ -109,14 +109,14 @@ span {
 }
 
 .nav__link--non-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Avenir, Helvetica, sans-serif;
   padding: 1.5rem;
   line-height: 0;
 
   &:hover {
     background-color: rgb(255, 255, 255, 0.4);
-    border-radius: 50px;
+    border-radius: 3.125rem;
     transition: 0.3s ease-out;
   }
 
@@ -130,7 +130,7 @@ button {
   line-height: 0;
   font-family: Avenir, Helvetica, sans-serif;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   border: none;
   background-color: $color-button;
   color: $white;
@@ -159,11 +159,11 @@ body.great-form {
 }
 
 .tag {
-  padding: 4px 10px;
-  border: 1px solid $border-1;
+  padding: 0.25rem 0.625rem;
+  border: 0.0625rem solid $border-1;
   font-family: Avenir, Helvetica, sans-serif;
-  border-radius: 50px;
-  font-size: 12px;
+  border-radius: 3.125rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: $dark-gray;
   text-transform: uppercase;

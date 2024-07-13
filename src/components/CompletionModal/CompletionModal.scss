@@ -31,21 +31,21 @@
       padding: 5rem 2.5rem 3rem;
       margin: 0 2.5rem;
       width: 70vw;
-      border-radius: 25px;
+      border-radius: 1.5625rem;
       position: relative;
     }
   }
 
   &__close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625rem;
+    right: 0.625rem;
     background: none;
     border: none;
 
     img {
-      width: 24px;
-      height: 24px;
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 }

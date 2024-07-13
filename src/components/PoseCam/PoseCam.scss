@@ -18,7 +18,7 @@
 
   canvas {
     height: auto;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
 
     @include mobile {
       width: 100% !important;
@@ -46,7 +46,7 @@
     &:hover {
       img {
         transition: transform 0.3s ease;
-        transform: translateX(10px);
+        transform: translateX(0.625rem);
       }
     }
   }
@@ -54,8 +54,8 @@
   &__button {
     &--back {
       height: 100%;
-      width: 20px;
-      padding-bottom: 5px;
+      width: 1.25rem;
+      padding-bottom: 0.3125rem;
     }
   }
 
@@ -104,7 +104,7 @@
       list-style-type: decimal;
       margin: 0.5em 0;
       margin-left: 1.5rem;
-      padding-left: 10px;
+      padding-left: 0.625rem;
 
       &::marker {
         font-weight: bold;
@@ -114,20 +114,20 @@
 
   &__feedback {
     text-align: center;
-    border-radius: 25px;
-    font-size: 20px;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
     padding: 1.5rem;
     height: 50%;
-    border: 5px solid transparent;
+    border: 0.3125rem solid transparent;
 
     @include desktop {
-      font-size: 30px;
+      font-size: 1.875rem;
     }
 
     &--success {
       border-color: green;
       background-color: rgb(255, 255, 255, 0);
-      font-size: 40px;
+      font-size: 2.5rem;
       text-align: center;
       text-transform: uppercase;
     }
@@ -136,7 +136,7 @@
   &__img {
     width: 100%;
     border-radius: 1.5625rem;
-    border: solid 1px $black;
+    border: solid 0.0625rem $black;
 
     @include tablet {
       height: fit-content;
@@ -154,7 +154,7 @@
 
     @include desktop {
       padding: 1rem;
-      font-size: 100px;
+      font-size: 6.25rem;
     }
   }
 }
