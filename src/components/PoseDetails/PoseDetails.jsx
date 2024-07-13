@@ -1,4 +1,6 @@
 import "./PoseDetails.scss";
+import backIcon from "./../../assets/icons/back.png";
+import { NavLink } from "react-router-dom";
 
 const PoseDetails = ({ pose }) => {
   const {
@@ -13,10 +15,18 @@ const PoseDetails = ({ pose }) => {
     tips,
   } = pose;
 
-  console.log("Image path:", image);
   return (
     <>
-      <h1 className="pose-details__header">{english_name}</h1>
+      <div className="pose-details__header">
+        <NavLink to="/poses" className="pose-details__icon-link">
+          <img
+            className="pose-details__button--back"
+            src={backIcon}
+            alt="back icon"
+          />
+        </NavLink>
+        <h1>{english_name}</h1>
+      </div>
       <div className="pose-details__content">
         <div className="pose-details__content--left">
           <img

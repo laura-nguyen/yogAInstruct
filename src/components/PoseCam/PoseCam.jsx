@@ -4,6 +4,7 @@ import p5 from "p5";
 import "./PoseCam.scss";
 import { NavLink } from "react-router-dom";
 import { refreshPage } from "./../../utils/helper.js";
+import backIcon from "./../../assets/icons/back.png";
 
 const PoseCam = ({ pose }) => {
   const { id, english_name, image, instructions } = pose;
@@ -139,9 +140,18 @@ const PoseCam = ({ pose }) => {
     };
   }, []);
 
+  const isPracticePath = /^\/practice\//.test(location.pathname);
+
   return (
     <>
-      <h1>{english_name}</h1>
+      <div className="cam__header--practice" onClick={refreshPage}>
+        {isPracticePath && (
+          <NavLink to="/poses" className="cam__icon-link" onClick={refreshPage}>
+            <img className="cam__button--back" src={backIcon} alt="back icon" />
+          </NavLink>
+        )}
+        <h1>{english_name}</h1>
+      </div>
       <div className="cam-container">
         <div className="cam__content--left">
           <div ref={canvasRef}></div>

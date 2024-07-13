@@ -117,10 +117,11 @@ span {
   &:hover {
     background-color: rgb(255, 255, 255, 0.4);
     border-radius: 50px;
+    transition: 0.3s ease-out;
   }
 
   @include tablet {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -137,11 +138,12 @@ button {
   font-weight: 400;
   font-size: 1.25rem;
   @include tablet {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   &:hover {
     background-color: rgb(255, 255, 255, 0.4);
+    transition: 0.3s ease-out;
     color: $black;
   }
 }

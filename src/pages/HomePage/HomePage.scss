@@ -17,7 +17,7 @@
   @include desktop {
     height: 50vh;
     max-width: 80rem;
-    padding: 0 8rem;
+    padding: 20rem 8rem;
     margin: 0 auto;
   }
 }
@@ -104,20 +104,21 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 1rem;
+  gap: 1.5rem;
 
   @include tablet {
+    gap: 2.25rem;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .about__card {
+  background-color: $white;
+  padding: 1.5rem;
+  border-radius: 25px;
+  border: 1px solid $dark-gray;
   @include tablet {
-    width: 30vw;
-  }
-
-  @include desktop {
-    width: 25rem;
+    width: 50%;
   }
 }

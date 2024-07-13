@@ -3,6 +3,28 @@
 @import "./../../styles/partials/variables.scss";
 
 .pose-details {
+  &__header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+
+  &__icon-link {
+    &:hover {
+      img {
+        transition: transform 0.3s ease;
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  &__button {
+    &--back {
+      height: 100%;
+      width: 20px;
+      padding-bottom: 5px;
+    }
+  }
   &__img {
     width: 100%;
     border: 1px solid $dark-gray;
@@ -76,7 +98,7 @@
 
 .pose-details__grid {
   @include grid-layout(1, 1.5rem);
-
+  padding: 1.5rem 0;
   @include tablet {
     @include grid-layout(2, 3rem);
     padding: 1.5rem 0;
@@ -95,7 +117,7 @@
 }
 
 .pose-details__list--unordered {
-  list-style-type: circle;
+  list-style-type: disc;
   margin: 0.5em 0;
   margin-left: 1.5rem;
   padding-left: 10px;

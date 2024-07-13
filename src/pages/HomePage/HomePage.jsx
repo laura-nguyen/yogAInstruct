@@ -72,8 +72,8 @@ const HomePage = () => {
 
             <h4>Learn Beginner Poses</h4>
             <p>
-              Our app guides you through beginner yoga poses and educates you on
-              their benefits, making it easy for anyone to get started.
+              We guide you through beginner yoga poses and educates you on their
+              benefits, making it easy for anyone to get started.
             </p>
           </li>
 

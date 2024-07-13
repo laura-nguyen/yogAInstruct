@@ -2,6 +2,12 @@
 @import "./../../styles/partials/typography.scss";
 @import "./../../styles/partials/variables.scss";
 
+.cam__header--practice {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
 .cam-container {
   display: flex;
   flex-direction: column;
@@ -31,6 +37,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.cam__icon-link {
+  &:hover {
+    img {
+      transition: transform 0.3s ease;
+      transform: translateX(10px);
+    }
+  }
+}
+
+.cam__button--back {
+  height: 100%;
+  width: 20px;
+  padding-bottom: 5px;
 }
 
 .cam__content--left {
@@ -78,6 +99,10 @@
   margin: 0.5em 0;
   margin-left: 1.5rem;
   padding-left: 10px;
+
+  &::marker {
+    font-weight: bold;
+  }
 }
 
 .cam__feedback {
