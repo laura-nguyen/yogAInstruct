@@ -75,6 +75,8 @@
 }
 
 .pose-details__grid {
+  @include grid-layout(1, 1.5rem);
+
   @include tablet {
     @include grid-layout(2, 3rem);
     padding: 1.5rem 0;
@@ -97,4 +99,15 @@
   margin: 0.5em 0;
   margin-left: 1.5rem;
   padding-left: 10px;
+}
+
+.pose-details__instructions-item {
+  list-style-type: decimal;
+  margin: 0.5em 0;
+  margin-left: 1.5rem;
+  padding-left: 10px;
+
+  &::marker {
+    font-weight: bold;
+  }
 }

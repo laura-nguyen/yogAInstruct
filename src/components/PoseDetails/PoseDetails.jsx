@@ -56,9 +56,9 @@ const PoseDetails = ({ pose }) => {
         <div className="pose-details__card">
           <h2>Instructions</h2>
           <div className="pose-details__benefits">
-            <ol className="cam__instructions">
+            <ol className="pose-details__instructions">
               {instructions.map((step, index) => (
-                <li className="cam__instructions-step" key={index}>
+                <li className="pose-details__instructions-item" key={index}>
                   {step}
                 </li>
               ))}

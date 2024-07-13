@@ -13,63 +13,64 @@
     padding: 0 8rem;
     margin: 3rem auto;
   }
-}
 
-.instructions__list {
-  @include desktop {
-    margin: 4rem 0 8rem;
-  }
-}
-.instructions__steps {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 2.25rem;
-
-  @include tablet {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.instructions__card {
-  @include tablet {
-    width: 30vw;
+  &__list {
+    @include desktop {
+      margin: 4rem 0 8rem;
+    }
   }
 
-  @include desktop {
-    width: 25rem;
-  }
-}
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.25rem;
 
-.instructions__number {
-  font-size: 50px;
-}
-
-.instructions__text {
-  @include tablet {
-    height: 7rem;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
-  @include desktop {
-    height: 5rem;
+  &__card {
+    @include tablet {
+      width: 30vw;
+    }
+
+    @include desktop {
+      width: 25rem;
+    }
   }
-}
 
-.instructions__img {
-  border-radius: 25px;
-  width: 100%;
-  position: relative;
-  z-index: -1;
-}
+  &__number {
+    font-size: 50px;
+  }
 
-.instructions__proceed {
-  display: flex;
+  &__text {
+    @include tablet {
+      height: 7rem;
+    }
 
-  justify-content: center;
-  padding: 1rem 0;
+    @include desktop {
+      height: 5rem;
+    }
+  }
 
-  @include tablet {
-    margin-top: 2.25rem;
+  &__img {
+    border-radius: 25px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+
+  &__proceed {
+    display: flex;
+
+    justify-content: center;
+    padding: 1rem 0;
+
+    @include tablet {
+      margin-top: 2.25rem;
+    }
   }
 }

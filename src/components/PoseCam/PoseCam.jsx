@@ -6,14 +6,7 @@ import { NavLink } from "react-router-dom";
 import { refreshPage } from "./../../utils/helper.js";
 
 const PoseCam = ({ pose }) => {
-  const {
-    id,
-    english_name,
-    image,
-    pose_description,
-    pose_benefits,
-    instructions,
-  } = pose;
+  const { id, english_name, image, instructions } = pose;
   const canvasRef = useRef(null);
 
   const [poseLabel, setPoseLabel] = useState("Detecting Pose...");
@@ -46,8 +39,6 @@ const PoseCam = ({ pose }) => {
         };
         brain = ml5.neuralNetwork(options);
 
-        // use different models for each exercise
-
         const modelInfo = {
           model: "/model-" + `${id}` + "/model.json",
           metadata: "/model-" + `${id}` + "/model_meta.json",
@@ -75,7 +66,6 @@ const PoseCam = ({ pose }) => {
         p.translate(video.width, 0);
         p.scale(-1, 1);
         p.image(video, 0, 0, video.width, video.height);
-        // specifies stoke of pose lines
         if (pose) {
           for (let i = 0; i < skeleton.length; i++) {
             let a = skeleton[i][0];
@@ -181,14 +171,6 @@ const PoseCam = ({ pose }) => {
           </ol>
         </div>
       </div>
-      {/* <div className="cam__nav" onClick={refreshPage}>
-        <NavLink to="/poses">
-          <button>All Poses</button>
-        </NavLink>
-        <NavLink to={`/practice/${Number(id) + 1}`} onClick={refreshPage}>
-          <button>Next Pose</button>
-        </NavLink>
-      </div> */}
     </>
   );
 };
