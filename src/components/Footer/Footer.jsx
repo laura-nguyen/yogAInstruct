@@ -1,6 +1,8 @@
 import "./Footer.scss";
 import lotusLogo from "./../../assets/icons/logo-lotus.png";
 import githubIcon from "../../assets/icons/github.png";
+import emailIcon from "../../assets/icons/email.svg";
+import linkedinIcon from "../../assets/icons/linkedin.svg";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -32,6 +34,28 @@ const Footer = () => {
                 <img
                   className="footer__github-icon"
                   src={githubIcon}
+                  alt="GitHub icon"
+                />
+              </a>
+              <a
+                className="footer__github-link"
+                href="mailto:nguy9640@mylaurier.ca"
+                target="_blank"
+              >
+                <img
+                  className="footer__github-icon"
+                  src={emailIcon}
+                  alt="GitHub icon"
+                />
+              </a>
+              <a
+                className="footer__github-link"
+                href="https://linkedin.com/in/laura-nguyen"
+                target="_blank"
+              >
+                <img
+                  className="footer__github-icon"
+                  src={linkedinIcon}
                   alt="GitHub icon"
                 />
               </a>
