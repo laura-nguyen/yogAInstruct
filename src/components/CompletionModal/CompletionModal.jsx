@@ -1,7 +1,8 @@
 import "./CompletionModal.scss";
 import { NavLink } from "react-router-dom";
+import closeIcon from "./../../assets/icons/exit.svg"; // Assuming you have a close icon SVG
 
-const CompletionModal = ({ show }) => {
+const CompletionModal = ({ show, onClose }) => {
   if (!show) {
     return null;
   }
@@ -9,7 +10,10 @@ const CompletionModal = ({ show }) => {
   return (
     <div className="modal">
       <div className="modal__content">
-        <h2>🎉 Congratulations!</h2>
+        <button className="modal__close" onClick={onClose}>
+          <img src={closeIcon} alt="Close" />
+        </button>
+        <h1>🎉 Great Job!</h1>
         <p>You have completed all the poses.</p>
         <NavLink to="/poses">
           <button>Back to Poses</button>

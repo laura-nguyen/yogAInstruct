@@ -21,6 +21,10 @@ const SessionCamPage = () => {
     }
   };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <main className="session">
       <PoseCam pose={pose} />
@@ -33,7 +37,7 @@ const SessionCamPage = () => {
           </NavLink>
         )}
       </div>
-      <CompletionModal show={showModal} />
+      <CompletionModal show={showModal} onClose={handleCloseModal} />
     </main>
   );
 };
