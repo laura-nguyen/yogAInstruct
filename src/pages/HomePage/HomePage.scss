@@ -20,64 +20,64 @@
     padding: 20rem 8rem;
     margin: 0 auto;
   }
-}
 
-.main__copy {
-  text-align: center;
-  order: 2;
-  @include tablet {
-    text-align: left;
-    order: 1;
-  }
-}
-
-.main__img {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 3rem;
-
-  @include tablet {
-    font-size: 40px;
-  }
-
-  @include desktop {
-    padding: 1rem;
-    font-size: 50px;
-  }
-}
-
-.main__cta-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  justify-content: center;
-
-  @include tablet {
-    margin-top: 2.25rem;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: flex-start;
-  }
-}
-
-.main__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 75px;
-  order: 1;
-
-  @include tablet {
-    justify-content: flex-end;
-    font-size: 150px;
-    width: 60%;
+  &__copy {
+    text-align: center;
     order: 2;
+    @include tablet {
+      text-align: left;
+      order: 1;
+    }
   }
-  @include desktop {
-    width: 50%;
-    font-size: 175px;
+
+  &__img {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+    @include desktop {
+      padding: 1rem;
+      font-size: 50px;
+    }
+  }
+
+  &__cta-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+
+    @include tablet {
+      margin-top: 2.25rem;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: flex-start;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    order: 1;
+
+    @include tablet {
+      justify-content: flex-end;
+      font-size: 150px;
+      width: 60%;
+      order: 2;
+    }
+    @include desktop {
+      width: 50%;
+      font-size: 175px;
+    }
   }
 }
 
@@ -94,31 +94,31 @@
     margin: 2rem auto;
     margin-bottom: 4rem;
   }
-}
 
-.about__header {
-  text-align: center;
-}
-
-.about__list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1.5rem;
-
-  @include tablet {
-    gap: 2.25rem;
-    flex-direction: row;
-    justify-content: space-between;
+  &__header {
+    text-align: center;
   }
-}
 
-.about__card {
-  background-color: $white;
-  padding: 1.5rem;
-  border-radius: 25px;
-  border: 1px solid $dark-gray;
-  @include tablet {
-    width: 50%;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+
+    @include tablet {
+      gap: 2.25rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    padding: 1.5rem;
+    border-radius: 25px;
+    border: 1px solid $dark-gray;
+    @include tablet {
+      width: 50%;
+    }
   }
 }

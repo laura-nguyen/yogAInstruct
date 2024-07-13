@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const PoseDetails = ({ pose }) => {
   const {
+    id,
     english_name,
     sanskrit_name,
     sanskrit_name_adapted,
@@ -48,6 +49,9 @@ const PoseDetails = ({ pose }) => {
             ))}
           </div>
           <p className="pose-details__description">{pose_description}</p>
+          <NavLink to={`/practice/${id}`} className="pose-details__cta">
+            <button className="card__button">Practice</button>
+          </NavLink>
         </div>
       </div>
       <div className="pose-details__grid">
@@ -55,9 +59,9 @@ const PoseDetails = ({ pose }) => {
           <h2>Benefits</h2>
           <div className="pose-details__benefits">
             <ul>
-              {pose_benefits.map((step, index) => (
+              {pose_benefits.map((item, index) => (
                 <li className="pose-details__list--unordered" key={index}>
-                  {step}
+                  {item}
                 </li>
               ))}
             </ul>
@@ -79,9 +83,9 @@ const PoseDetails = ({ pose }) => {
           <h2>Common Mistakes</h2>
           <div className="pose-details__benefits">
             <ul>
-              {common_mistakes.map((step, index) => (
+              {common_mistakes.map((item, index) => (
                 <li className="pose-details__list--unordered" key={index}>
-                  {step}
+                  {item}
                 </li>
               ))}
             </ul>
@@ -91,9 +95,9 @@ const PoseDetails = ({ pose }) => {
           <h2>Tips</h2>
           <div className="pose-details__benefits">
             <ul>
-              {tips.map((step, index) => (
+              {tips.map((tip, index) => (
                 <li className="pose-details__list--unordered" key={index}>
-                  {step}
+                  {tip}
                 </li>
               ))}
             </ul>

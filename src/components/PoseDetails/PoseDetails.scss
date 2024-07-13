@@ -29,9 +29,6 @@
     width: 100%;
     border: 1px solid $dark-gray;
     border-radius: 25px;
-    // @include desktop {
-    //   width: 50%;
-    // }
   }
 
   &__sanskrit {
@@ -50,7 +47,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     @include tablet {
       gap: 2.25rem;
       flex-direction: row;
@@ -66,70 +62,86 @@
     }
 
     &--right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       @include tablet {
         width: 50%;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    text-align: center;
+    @include tablet {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+
+    @include desktop {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__cta {
+    align-items: center;
+  }
+
+  &__grid {
+    @include grid-layout(1, 1.5rem);
+    padding: 2.5rem 0;
+    @include tablet {
+      @include grid-layout(2, 3rem);
+      padding: 1.5rem 0;
+    }
+  }
+
+  &__instructions-item {
+    list-style-type: decimal;
+    margin: 0.5em 0;
+    margin-left: 1.5rem;
+    padding-left: 10px;
+
+    &::marker {
+      font-weight: bold;
+    }
+  }
+
+  &__list {
+    &--unordered {
+      list-style-type: disc;
+      margin: 0.5em 0;
+      margin-left: 1.5rem;
+      padding-left: 10px;
+    }
+  }
+
+  &__benefits {
+    background-color: $white;
+    padding: 2.25rem;
+    border-radius: 25px;
+    border: 1px solid $dark-gray;
+  }
+}
+
+.card {
+  &__tags {
+    &--description {
+      justify-content: center;
+      @include tablet {
+        justify-content: flex-start;
       }
     }
   }
 }
 
-.pose-details__description {
-  font-size: 1.5rem;
-  text-align: center;
-  @include tablet {
-    font-size: 1.75rem;
-    text-align: left;
-  }
-}
-
-.card__tags--description {
-  justify-content: center;
-
-  @include tablet {
-    justify-content: flex-start;
-  }
-}
-
-.tag--white {
-  background-color: $white;
-  border-color: $dark-gray;
-  margin-bottom: 1rem;
-}
-
-.pose-details__grid {
-  @include grid-layout(1, 1.5rem);
-  padding: 1.5rem 0;
-  @include tablet {
-    @include grid-layout(2, 3rem);
-    padding: 1.5rem 0;
-  }
-}
-
-.pose-details__benefits {
-  background-color: $white;
-  padding: 2.25rem;
-  border-radius: 25px;
-  border: 1px solid $dark-gray;
-}
-
-.pose-details__description--benefits {
-  height: auto;
-}
-
-.pose-details__list--unordered {
-  list-style-type: disc;
-  margin: 0.5em 0;
-  margin-left: 1.5rem;
-  padding-left: 10px;
-}
-
-.pose-details__instructions-item {
-  list-style-type: decimal;
-  margin: 0.5em 0;
-  margin-left: 1.5rem;
-  padding-left: 10px;
-
-  &::marker {
-    font-weight: bold;
+.tag {
+  &--white {
+    background-color: $white;
+    border-color: $dark-gray;
+    margin-bottom: 1rem;
   }
 }
