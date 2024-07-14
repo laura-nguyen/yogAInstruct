@@ -29,7 +29,6 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 - React
 - SCSS
 - Node.js
-- Express
 - Client libraries:
   - react
   - react-router
@@ -75,7 +74,7 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 ### Data
 
-- data is on JSON, here is a snippet on the client side this is what it looks like
+- Data is stored in JSON format. Here is a snippet of the client-side data structure:
 
   ```
   [
@@ -114,8 +113,6 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
    ...
   ]
   ```
-
-```
 
 ### Endpoints
 
@@ -204,5 +201,3 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 - Add social sharing features to allow users to share achievements on social media.
 - Enable users to create and save custom yoga routines.
-
-```
