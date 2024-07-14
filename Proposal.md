@@ -2,7 +2,7 @@
 
 ## Overview
 
-YogAInstruct is an intelligent web application designed to help individuals integrate yoga and stretching routines into their daily lives. It trains users on yoga poses, educates them on their benefits, and provides real-time feedback to improve posture and overall well-being.
+YogAInstruct is an AI web application designed to help individuals integrate yoga and stretching routines into their daily lives. It trains users on yoga poses, educates them on their benefits, and provides real-time feedback to improve posture and overall well-being.
 
 ### Problem
 
@@ -18,9 +18,9 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 ### Features
 
-- Real-time Pose Estimation: Using AI/ML to provide instant feedback on yoga pose form.
-- Yoga Pose Library: Detailed information on beginner yoga poses, including instructions, benefits, common mistakes, and general tips.
-- Guided Sessions: Structured yoga sessions tailored for beginners.
+- As a user, I want to receive real-time pose estimation to get instant feedback on my yoga pose form.
+- As a user, I want access to a yoga pose library with detailed information on beginner yoga poses, including instructions, benefits, common mistakes, and general tips.
+- As a user, I want to participate in guided sessions that provide structured yoga routines tailored for beginners.
 
 ## Implementation
 
@@ -41,12 +41,15 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
   - Welcome message
   - Overview of features
 - **Instructions Page**:
-  - Instructions on how to set up before starting a session e.g. accept webcam permissions, make sure keypoints on body, do pose
+  - Instructions on how to set up before starting a session (e.g., accept webcam permissions, ensure keypoints on body, perform pose)
 - **Real-Time Session**:
   - Live video feed with pose estimation overlay
   - Real-time feedback and pose instructions
 - **Yoga Pose Library**:
-  - Information on beginner poses
+  - Information on 6 beginner poses
+- **Yoga Pose Practice**:
+  - Live video feed to practice an individual yoga pose
+  - Real-time feedback and pose instructions
 - **Yoga Pose Details**:
   - Details on individual yoga poses, including instructions, benefits, common mistakes, and general tips.
 
