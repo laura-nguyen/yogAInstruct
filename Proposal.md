@@ -1,5 +1,8 @@
 # YogAInstruct
 
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/c59f26b0-a0b2-4a16-860d-d8cc44d54b53">
+
+
 ## Overview
 
 YogAInstruct is an AI web application designed to help individuals integrate yoga and stretching routines into their daily lives. It trains users on yoga poses, educates them on their benefits, and provides real-time feedback to improve posture and overall well-being.
