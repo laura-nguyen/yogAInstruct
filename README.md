@@ -19,33 +19,29 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/laura-nguyen/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/laura-nguyen/yogAInstruct">
+    <img width="100%" alt="Screenshot 2024-07-14 at 1 31 48 PM" src="https://github.com/user-attachments/assets/bed65b6d-35b3-4295-aff2-01023a915cb3">
+
   </a>
 
 <h3 align="center">yogAInstruct</h3>
 
   <p align="center">
-    project_description
+    YogAInstruct is a web application designed to seamlessly integrate yoga and stretching routines into daily life. Leveraging AI, YogAInstruct offers real-time feedback and pose estimation to enhance posture and overall well-being.
+
+  <br />
+     <br />
+    <a href="https://github.com/laura-nguyen/yogAInstruct"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://github.com/laura-nguyen/repo_name"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/laura-nguyen/repo_name">View Demo</a>
+    <a href="https://github.com/laura-nguyen/yogAInstruct">View Demo</a>
     ·
-    <a href="https://github.com/laura-nguyen/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/laura-nguyen/yogAInstruct/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/laura-nguyen/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/laura-nguyen/yogAInstruct/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -79,22 +75,30 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Product Screenshot](https://github.com/user-attachments/assets/8ebf1b1f-4d56-45ae-bd59-7994a0dbbb1e)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `laura-nguyen`, `repo_name`, `lauriananguyen`, `laura-nguyen`, `email_client`, `email`, `project_title`, `project_description`
+
+YogAInstruct is a web application designed to seamlessly integrate yoga and stretching routines into daily life. Leveraging AI, YogAInstruct offers real-time feedback and pose estimation to enhance posture and overall well-being.
+
+The application is tailored for office workers, as well as fitness beginners, providing a convenient way to incorporate quick and effective yoga stretches to alleviate the physical strain caused by prolonged sitting. Users can access a comprehensive yoga pose library with detailed instructions, benefits, common mistakes, and tips. Additionally, YogAInstruct offers guided yoga sessions that require no special equipment, making it easy to practice yoga from the comfort of one's home or office.
+
+With its user-friendly interface and personalized guidance, YogAInstruct aims to improve users' posture, reduce back pain, and promote a healthier, more balanced lifestyle.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-- [![React][React.js]][React-url]
-- https://img.shields.io/badge/p5%20js-ED225D?style=for-the-badge&logo=p5dotjs&logoColor=white
-- https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-- https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
-- https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E
--     https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white
-- https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
-- Ml5.js
+# Badges
+
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![p5.js](https://img.shields.io/badge/p5%20js-ED225D?style=for-the-badge&logo=p5dotjs&logoColor=white)](https://p5js.org/)
+[![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![ml5.js](https://img.shields.io/badge/ml5.js-FF6F61?style=for-the-badge&logo=javascript&logoColor=white)](https://ml5js.org/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,7 +111,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Ensure you have npm installed. You can install it by running the following command:
 
 - npm
   ```sh
@@ -116,18 +120,17 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/laura-nguyen/repo_name.git
+   git clone https://github.com/laura-nguyen/yogAInstruct.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+3. Start the development server
    ```js
-   const API_KEY = "ENTER YOUR API";
+   npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -136,9 +139,38 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Starting a Session
+#### Home Page:
+- On the home page, click on the "Start Session" button to begin a guided yoga session.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+#### Instructions Page:
+- Follow the instructions on the screen to set up your webcam and ensure it has the necessary permissions.
+- Make sure your body’s key points are visible to the camera for accurate pose detection.
+  
+#### Real-Time Session:
+- Perform the yoga poses as guided by the app.
+- The AI will provide real-time feedback on your form. If your pose is correct, you will see "Great Form!" along with a checkmark.
+- If your pose is incorrect, you will receive specific feedback on how to adjust your form.
+
+#### Completing the Session:
+- After completing all poses in the session, a completion modal will appear congratulating you.
+- Click "Back to Poses" to return to the Yoga Pose Library.
+
+### Exploring the Yoga Pose Library
+#### Yoga Pose Library:
+
+- Access the Yoga Pose Library from the home page to explore various yoga poses.
+- Each pose entry includes instructions, benefits, common mistakes, and tips.
+#### Pose Details:
+
+- Click on any pose to view detailed information about that pose.
+- Learn about the specific benefits, common mistakes to avoid, and tips for perfecting the pose.
+- Practicing Individual Poses
+
+#### Practice Mode:
+- From the Yoga Pose Library, select a pose and click "Practice" to enter practice mode.
+- The app will provide real-time feedback as you practice the individual pose.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,12 +178,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+- [x] Initial set up 
+- [x] Data collection and model training
+- [x] User interface and core pages  
+- [ ] User authentication
+  - [ ] Dashboard
+- [ ] Countdown timer when holding poses
 
-See the [open issues](https://github.com/laura-nguyen/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/laura-nguyen/yogAInstruct/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,9 +218,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@lauriananguyen](https://twitter.com/lauriananguyen) - email@email_client.com
+Laura Nguyen - [@lauriananguyen](https://twitter.com/lauriananguyen) - hello@lauranguyen.me
 
-Project Link: [https://github.com/laura-nguyen/repo_name](https://github.com/laura-nguyen/repo_name)
+Project Link: [https://github.com/laura-nguyen/yogAInstruct](https://github.com/laura-nguyen/yogAInstruct)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,41 +228,28 @@ Project Link: [https://github.com/laura-nguyen/repo_name](https://github.com/lau
 
 ## Acknowledgments
 
-- []()
-- []()
-- []()
+- [Brainstation](https://brainstation.io/)
+- [Code to Career](https://codetocareer.ca/)
+- Brainstation TAs, educators, and past students
+- Fellow classmates
+- [Icons8](https://icons8.com/)
+- [Freepik - Flaticon](https://www.flaticon.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/laura-nguyen/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/laura-nguyen/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/laura-nguyen/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/laura-nguyen/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/laura-nguyen/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/laura-nguyen/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/laura-nguyen/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/laura-nguyen/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/laura-nguyen/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/laura-nguyen/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/laura-nguyen/yogAInstruct.svg?style=for-the-badge
+[contributors-url]: https://github.com/laura-nguyen/yogAInstruct/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/laura-nguyen/yogAInstruct.svg?style=for-the-badge
+[forks-url]: https://github.com/laura-nguyen/yogAInstruct/network/members
+[stars-shield]: https://img.shields.io/github/stars/laura-nguyen/yogAInstruct.svg?style=for-the-badge
+[stars-url]: https://github.com/laura-nguyen/yogAInstruct/stargazers
+[issues-shield]: https://img.shields.io/github/issues/laura-nguyen/yogAInstruct.svg?style=for-the-badge
+[issues-url]: https://github.com/laura-nguyen/yogAInstruct/issues
+[license-shield]: https://img.shields.io/github/license/laura-nguyen/yogAInstruct.svg?style=for-the-badge
+[license-url]: https://github.com/laura-nguyen/yogAInstruct/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/laura-nguyen
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+
