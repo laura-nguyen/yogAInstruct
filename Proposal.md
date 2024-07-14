@@ -37,6 +37,9 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 ### Sitemap
 
+![image](https://github.com/user-attachments/assets/2fb7d625-20a7-4891-83d0-03e725c91be1)
+
+
 - **Homepage**:
   - Welcome message
   - Overview of features
@@ -55,25 +58,9 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 ### Mockups
 
-#### Home Page
-
-<img width="600" alt="Screenshot 2024-07-07 at 11 39 30 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/2279a2f2-84af-4546-8d3d-71bede4fe992">
-
-#### Instructions Page
-
-<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/42758bc9-4d99-40ea-b670-db0b02df58f7">
-
-#### Real-Time Session
-
-<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/42758bc9-4d99-40ea-b670-db0b02df58f7">
-
-#### Yoga Pose Library
-
-<img width="600" alt="Screenshot 2024-07-07 at 11 43 59 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/0d8d4e74-8631-4723-bc8b-5d41d4cf1b0d">
-
-#### Pose Details
-
-<img width="600" alt="Screenshot 2024-07-07 at 11 43 59 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/0d8d4e74-8631-4723-bc8b-5d41d4cf1b0d">
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/26588823-7c6f-45d2-aadc-d5d1ac381f59">
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/bc74b880-8563-44d0-bf71-060ea5177e11">
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/063849a9-0ca6-4c89-bcc5-619e31933e7d">
 
 ### Data
 
@@ -117,13 +104,9 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
   ]
   ```
 
-### Endpoints
+### Endpoints and Auth
 
-- No endpoints will be used for this project.
-
-### Auth
-
-- No auth will be used for this project.
+- No endpoints and auth will be used for this project.
 
 ## Roadmap
 
