@@ -1,219 +1,258 @@
-# Yoga AI
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-## Overview
+<a id="readme-top"></a>
 
-Yoga AI is an intelligent web application designed to help individuals integrate yoga and stretching routines into their daily lives. It trains users on yoga poses, educates them on their benefits, and provides a timer to hold poses for a specified duration. Utilizing AI and Machine Learning, Yoga AI offers guided sessions with real-time feedback and pose estimation to improve posture and overall well-being.
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-### Problem
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-Many people spend long hours sitting, leading to poor posture, back pain, and other health issues. Lack of movement and stretching can result in decreased productivity and long-term health problems. Yoga is an excellent way to improve mental and physical health without requiring any equipment, but there is often a lack of accessible, guided resources for beginners.
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-### User Profile
-  
-- **Desk/Remote Workers, and Fitness Beginners**:
-- Looking for quick and effective yoga stretches to relieve the physical strain of sitting for long periods
-- Wanting to improve their posture and reduce back pain
-- Seeking guided yoga sessions that can be done at their desk without any special equipment
-- Interested in tracking their progress and seeing improvements over time
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
+  <h3 align="center">Best-README-Template</h3>
 
-### Features
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-- Real-time Pose Estimation: Using AI/ML to provide instant feedback on yoga pose form.
-- Real-time Counter: Countdown while holding a pose.
-- Yoga Pose Library: Detailed information on beginner yoga poses, including instructions, benefits, and Sanskrit names.
-- Guided Sessions: Structured yoga sessions tailored for beginners.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-## Implementation
+<!-- ABOUT THE PROJECT -->
 
-### Tech Stack
+## About The Project
 
-- React
-- SCSS
-- Node.js
-- Express
-- Client libraries:
-  - react
-  - react-router
-  - axios
-  - ml5.js
-  - p5.js
-- Server libraries:
-  - express
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-### APIs
+There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-- Exercise Database API: To fetch exercise details and routines.
+Here's why:
 
-### Sitemap
+- Your time should be focused on creating something amazing. A project that solves a problem and helps others
+- You shouldn't be doing the same tasks over and over like creating a README from scratch
+- You should implement DRY principles to the rest of your life :smile:
 
-- **Homepage**:
-  - Welcome message
-  - Overview of features
-- **Real-Time Session**:
-  - Live video feed with pose estimation overlay
-  - Real-time feedback and instructions
-- **Yoga Pose Library**:
-  - Information on beginner poses
-  
-### Mockups
+Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-#### Home Page
-<img width="600" alt="Screenshot 2024-07-07 at 11 39 30 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/2279a2f2-84af-4546-8d3d-71bede4fe992">
+Use the `BLANK_README.md` to get started.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Yoga Pose Library 
-<img width="600" alt="Screenshot 2024-07-07 at 11 43 59 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/0d8d4e74-8631-4723-bc8b-5d41d4cf1b0d">
+### Built With
 
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-#### Real-Time Session
-<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/42758bc9-4d99-40ea-b670-db0b02df58f7">
+- [![Next][Next.js]][Next-url]
+- [![React][React.js]][React-url]
+- [![Vue][Vue.js]][Vue-url]
+- [![Angular][Angular.io]][Angular-url]
+- [![Svelte][Svelte.dev]][Svelte-url]
+- [![Laravel][Laravel.com]][Laravel-url]
+- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+- [![JQuery][JQuery.com]][JQuery-url]
 
-#### Nice-to-Haves
-<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/9b9e97b4-38a9-4820-b8c7-2b13983c11ff">
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
 
+## Getting Started
 
-### Data
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-- No databases will be used for this project
+### Prerequisites
 
-### Endpoints
+This is an example of how to list things you need to use the software and how to install them.
 
-**`GET /poses`**
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-- Retrieve a list of yoga poses with details.
+### Installation
 
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-Response:
-```
-[
-   {
-     "english_name": "Tree",
-     "sanskrit_name_adapted": "Vrksasana",
-     "sanskrit_name": "Vṛkṣāsana",
-     "pose_description": "Tree Pose is a balancing posture that strengthens the legs, ankles, and feet while improving flexibility and balance.",
-     "pose_benefits": "Strengthens the legs, ankles, and feet. Improves flexibility in the hips and knees. Improves balance.",
-     "image": "URL_to_image",
-     "categories": ["Standing Poses", "Balancing Poses"],
-     "instructions": [
-       "Start standing tall with feet together.",
-       "Shift weight onto one foot.",
-       "Place the sole of the other foot on the inner thigh.",
-       "Press hands together in prayer position at chest.",
-       "Raise arms overhead with palms touching.",
-       "Keep gaze forward and hold."
-     ]
-   },
-   ...
-]
-```
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = "ENTER YOUR API";
+   ```
 
-**`GET /poses/:id`**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Retrieve a specific yoga pose by ID during the real time session.
+<!-- USAGE EXAMPLES -->
 
-Parameters:
-- id: Pose id as number
+## Usage
 
-Response:
-```
-{
-   "english_name": "Tree",
-   "sanskrit_name_adapted": "Vrksasana",
-   "sanskrit_name": "Vṛkṣāsana",
-   "pose_description": "Tree Pose is a balancing posture that strengthens the legs, ankles, and feet while improving flexibility and balance.",
-   "pose_benefits": "Strengthens the legs, ankles, and feet. Improves flexibility in the hips and knees. Improves balance.",
-   "image": "URL_to_image",
-   "categories": ["Standing Poses", "Balancing Poses"],
-   "instructions": [
-     "Start standing tall with feet together.",
-     "Shift weight onto one foot.",
-     "Place the sole of the other foot on the inner thigh.",
-     "Press hands together in prayer position at chest.",
-     "Raise arms overhead with palms touching.",
-     "Keep gaze forward and hold."
-   ]
-}
-```
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-### Auth
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- No auth will be used for this project
+<!-- ROADMAP -->
 
 ## Roadmap
 
-### Sprint 1: Initial Setup and Core Features
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+  - [ ] Chinese
+  - [ ] Spanish
 
-#### Project Setup
-- Set up project structure and initial environment.
-- Create client folder and initialize a React project.
-- Initialize backend with Node.js and Express.
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-#### Library Testing
-- Test the ml5 and p5 library for pose detection and visualization.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Data Collection and Model Training
-- Collect data on keypoints for various yoga poses.
-- Train the ML model using collected data to accurately detect yoga poses.
+<!-- CONTRIBUTING -->
 
-#### Real-Time Pose Estimation
-- Deploy the trained model to detect yoga poses in real-time using TensorFlow.js and PoseNet.
-- Implement real-time pose estimation and feedback.
+## Contributing
 
-#### API Development
-- Create an API for yoga poses.
-  - `GET /api/yoga-poses`: Retrieve a list of yoga poses.
-  - `GET /api/yoga-poses/:id`: Retrieve a specific yoga pose by ID.
-- Create counter timer functionality to track pose durations.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Sprint 2: User Interface and Core Pages
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-#### Homepage Development
-- Create a welcoming homepage with an overview of features.
-- Add call-to-action buttons (Sign Up, Log In).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-#### Real-Time Session Page
-- Develop the real-time session page with live video feed and pose estimation overlay.
-- Provide real-time feedback and instructions during sessions.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Yoga Pose Library
-- Implement a yoga pose library page with detailed information on beginner poses.
-- Include instructions, benefits, and images for each pose.
+<!-- LICENSE -->
 
-#### Styling and User Experience
-- Style the application using SCSS for a modern and responsive design.
-- Ensure the user interface is intuitive and easy to navigate.
+## License
 
-### Sprint 3: Advanced Features and Final Touches
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-#### User Authentication (Nice-to-Have)
-- Implement Sign Up and Log In functionality using Firebase Auth or JWT-based authentication.
-- Create user registration and authentication forms.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Dashboard and Progress Tracking (Nice-to-Have)
-- Develop a user dashboard to overview progress, quick stats, and goals.
-- Implement functionality to track user progress and display past sessions.
+<!-- CONTACT -->
 
-#### Post-Session Summary (Nice-to-Have)
-- Create a post-session summary page to provide feedback on session performance.
+## Contact
 
-#### Social Sharing and Customization (Nice-to-Have)
-- Add social sharing features to allow users to share achievements on social media.
-- Enable users to create and save custom yoga routines.
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-#### Final Testing and Refinement
-- Conduct thorough testing to ensure all features work as expected.
-- Refine the user experience based on feedback and testing results.
-- Prepare the application for deployment.
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-### Deployment
-- Deploy the client and server to a production environment.
-- Ensure that all components are fully functional and accessible.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Nice-to-haves
-- **Social Sharing**: Allow users to share their achievements on social media.
-- **Additional Exercises**: Add more exercises, such as push-ups or full-body workouts.
-- **User Profile**: View and edit personal information, set fitness goals, view session history.
-- **Virtual Coaching**: Audio and visual guidance during sessions.
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+- [Choose an Open Source License](https://choosealicense.com)
+- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+- [Malven's Grid Cheatsheet](https://grid.malven.co/)
+- [Img Shields](https://shields.io)
+- [GitHub Pages](https://pages.github.com)
+- [Font Awesome](https://fontawesome.com)
+- [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com
