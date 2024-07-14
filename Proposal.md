@@ -1,8 +1,8 @@
-# Yoga AI
+# YogAInstruct
 
 ## Overview
 
-Yoga AI is an intelligent web application designed to help individuals integrate yoga and stretching routines into their daily lives. It trains users on yoga poses, educates them on their benefits, and provides a timer to hold poses for a specified duration. Utilizing AI and Machine Learning, Yoga AI offers guided sessions with real-time feedback and pose estimation to improve posture and overall well-being.
+YogAInstruct is an intelligent web application designed to help individuals integrate yoga and stretching routines into their daily lives. It trains users on yoga poses, educates them on their benefits, and provides real-time feedback to improve posture and overall well-being.
 
 ### Problem
 
@@ -19,8 +19,7 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 ### Features
 
 - Real-time Pose Estimation: Using AI/ML to provide instant feedback on yoga pose form.
-- Real-time Counter: Countdown while holding a pose.
-- Yoga Pose Library: Detailed information on beginner yoga poses, including instructions, benefits, and Sanskrit names.
+- Yoga Pose Library: Detailed information on beginner yoga poses, including instructions, benefits, common mistakes, and general tips.
 - Guided Sessions: Structured yoga sessions tailored for beginners.
 
 ## Implementation
@@ -34,26 +33,23 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 - Client libraries:
   - react
   - react-router
-  - axios
   - ml5.js
   - p5.js
-- Server libraries:
-  - express
-
-### APIs
-
-- Exercise Database API: To fetch exercise details and routines.
 
 ### Sitemap
 
 - **Homepage**:
   - Welcome message
   - Overview of features
+- **Instructions Page**:
+  - Instructions on how to set up before starting a session e.g. accept webcam permissions, make sure keypoints on body, do pose
 - **Real-Time Session**:
   - Live video feed with pose estimation overlay
-  - Real-time feedback and instructions
+  - Real-time feedback and pose instructions
 - **Yoga Pose Library**:
   - Information on beginner poses
+- **Yoga Pose Details**:
+  - Details on individual yoga poses, including instructions, benefits, common mistakes, and general tips.
 
 ### Mockups
 
@@ -61,25 +57,69 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 <img width="600" alt="Screenshot 2024-07-07 at 11 39 30 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/2279a2f2-84af-4546-8d3d-71bede4fe992">
 
-#### Yoga Pose Library
+#### Instructions Page
 
-<img width="600" alt="Screenshot 2024-07-07 at 11 43 59 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/0d8d4e74-8631-4723-bc8b-5d41d4cf1b0d">
+<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/42758bc9-4d99-40ea-b670-db0b02df58f7">
 
 #### Real-Time Session
 
 <img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/42758bc9-4d99-40ea-b670-db0b02df58f7">
 
-#### Nice-to-Haves
+#### Yoga Pose Library
 
-<img width="600" alt="image" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/9b9e97b4-38a9-4820-b8c7-2b13983c11ff">
+<img width="600" alt="Screenshot 2024-07-07 at 11 43 59 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/0d8d4e74-8631-4723-bc8b-5d41d4cf1b0d">
+
+#### Pose Details
+
+<img width="600" alt="Screenshot 2024-07-07 at 11 43 59 PM" src="https://github.com/laura-nguyen/desk-yoga-ai/assets/39463778/0d8d4e74-8631-4723-bc8b-5d41d4cf1b0d">
 
 ### Data
 
-- No databases will be used for this project.
+- data is on JSON, here is a snippet on the client side this is what it looks like
+
+  ```
+  [
+   {
+    "id": "0",
+    "english_name": "Tree",
+    "sanskrit_name_adapted": "Vrksasana",
+    "sanskrit_name": "Vṛkṣāsana",
+    "pose_description": "Tree Pose is a balancing posture that strengthens the legs, ankles, and feet while improving flexibility and balance.",
+    "pose_benefits": [
+      "Strengthens the legs, ankles, and feet.",
+      "Improves flexibility in the hips and knees.",
+      "Improves balance."
+    ],
+    "image": "src/assets/images/tree pose.jpeg",
+    "categories": ["Standing", "Balancing"],
+    "instructions": [
+      "Start standing tall with feet together.",
+      "Shift weight onto one foot.",
+      "Place the sole of the other foot on the inner thigh.",
+      "Press hands together in prayer position at chest.",
+      "Raise arms overhead with palms touching.",
+      "Keep gaze forward and hold."
+    ],
+    "common_mistakes": [
+      "Not aligning the hips",
+      "Knee not pointing forward",
+      "Shoulders not relaxed"
+    ],
+    "tips": [
+      "Engage your core",
+      "Keep your breathing steady",
+      "Focus on a fixed point to maintain balance"
+    ]
+  },
+   ...
+  ]
+  ```
+
+```
 
 ### Endpoints
 
-- No endpoints will be used for this project,.
+- No endpoints will be used for this project.
 
 ### Auth
 
@@ -109,13 +149,6 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 - Deploy the trained model to detect yoga poses in real-time using TensorFlow.js and PoseNet.
 - Implement real-time pose estimation and feedback.
 
-#### API Development
-
-- Create an API for yoga poses.
-  - `GET /api/yoga-poses`: Retrieve a list of yoga poses.
-  - `GET /api/yoga-poses/:id`: Retrieve a specific yoga pose by ID.
-- Create counter timer functionality to track pose durations.
-
 ### Sprint 2: User Interface and Core Pages
 
 #### Homepage Development
@@ -138,7 +171,20 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 - Style the application using SCSS for a modern and responsive design.
 - Ensure the user interface is intuitive and easy to navigate.
 
-### Sprint 3: Advanced Features and Final Touches
+### Sprint 3: Final Touches
+
+#### Final Testing and Refinement
+
+- Conduct thorough testing to ensure all features work as expected.
+- Refine the user experience based on feedback and testing results.
+- Prepare the application for deployment.
+
+### Deployment
+
+- Deploy the client and server to a production environment.
+- Ensure that all components are fully functional and accessible.
+
+## Nice-to-haves
 
 #### User Authentication (Nice-to-Have)
 
@@ -154,25 +200,9 @@ Many people spend long hours sitting, leading to poor posture, back pain, and ot
 
 - Create a post-session summary page to provide feedback on session performance.
 
-#### Social Sharing and Customization (Nice-to-Have)
+#### Timer (Nice-to-Have)
 
 - Add social sharing features to allow users to share achievements on social media.
 - Enable users to create and save custom yoga routines.
 
-#### Final Testing and Refinement
-
-- Conduct thorough testing to ensure all features work as expected.
-- Refine the user experience based on feedback and testing results.
-- Prepare the application for deployment.
-
-### Deployment
-
-- Deploy the client and server to a production environment.
-- Ensure that all components are fully functional and accessible.
-
-## Nice-to-haves
-
-- **Social Sharing**: Allow users to share their achievements on social media.
-- **Additional Exercises**: Add more exercises, such as push-ups or full-body workouts.
-- **User Profile**: View and edit personal information, set fitness goals, view session history.
-- **Virtual Coaching**: Audio and visual guidance during sessions.
+```
