@@ -13,7 +13,7 @@
     &:hover {
       img {
         transition: transform 0.3s ease;
-        transform: translateX(10px);
+        transform: translateX(0.625rem);
       }
     }
   }
@@ -21,14 +21,14 @@
   &__button {
     &--back {
       height: 100%;
-      width: 20px;
-      padding-bottom: 5px;
+      width: 1.25rem;
+      padding-bottom: 0.3125rem;
     }
   }
   &__img {
     width: 100%;
-    border: 1px solid $dark-gray;
-    border-radius: 25px;
+    border: 0.0625rem solid $dark-gray;
+    border-radius: 1.5625rem;
   }
 
   &__sanskrit {
@@ -40,7 +40,7 @@
 
     @include tablet {
       font-size: 1rem;
-      padding-top: 8px;
+      padding-top: 0.5rem;
     }
   }
 
@@ -103,7 +103,7 @@
     list-style-type: decimal;
     margin: 0.5em 0;
     margin-left: 1.5rem;
-    padding-left: 10px;
+    padding-left: 0.625rem;
 
     &::marker {
       font-weight: bold;
@@ -115,15 +115,15 @@
       list-style-type: disc;
       margin: 0.5em 0;
       margin-left: 1.5rem;
-      padding-left: 10px;
+      padding-left: 0.625rem;
     }
   }
 
   &__benefits {
     background-color: $white;
     padding: 2.25rem;
-    border-radius: 25px;
-    border: 1px solid $dark-gray;
+    border-radius: 1.5625rem;
+    border: 0.0625rem solid $dark-gray;
   }
 }
 

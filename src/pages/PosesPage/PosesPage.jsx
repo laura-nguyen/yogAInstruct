@@ -2,6 +2,7 @@ import poses from "../../data/yoga_poses.json";
 import PoseCard from "../../components/PoseCard/PoseCard";
 import "./PosesPage.scss";
 
+
 export const PosesPage = () => {
   return (
     <main className="poses">
