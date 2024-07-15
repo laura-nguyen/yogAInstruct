@@ -1,6 +1,7 @@
 import "./CompletionModal.scss";
 import { NavLink } from "react-router-dom";
 import closeIcon from "./../../assets/icons/exit.svg"; // Assuming you have a close icon SVG
+import closeIcon from "./../../assets/icons/exit.svg";
 
 const CompletionModal = ({ show, onClose }) => {
   if (!show) {
