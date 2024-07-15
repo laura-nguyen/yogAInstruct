@@ -1,6 +1,9 @@
 # YogAInstruct
 
-<img width="100%" alt="image" src="https://github.com/user-attachments/assets/c59f26b0-a0b2-4a16-860d-d8cc44d54b53">
+ <a href="https://github.com/laura-nguyen/yogAInstruct">
+    <img width="100%" alt="Screenshot 2024-07-14 at 1 31 48 PM" src="https://github.com/user-attachments/assets/bed65b6d-35b3-4295-aff2-01023a915cb3">
+
+  </a>
 
 
 ## Overview
