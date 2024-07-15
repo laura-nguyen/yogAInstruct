@@ -1,0 +1,202 @@
+[
+  {
+    "id": "0",
+    "english_name": "Tree",
+    "sanskrit_name_adapted": "Vrksasana",
+    "sanskrit_name": "Vṛkṣāsana",
+    "pose_description": "Tree Pose is a balancing posture that strengthens the legs, ankles, and feet while improving flexibility and balance.",
+    "pose_benefits": [
+      "Strengthens the legs, ankles, and feet.",
+      "Improves flexibility in the hips and knees.",
+      "Improves balance."
+    ],
+    "image": "/assets/images/tree pose.jpeg",
+    "categories": ["Standing", "Balancing"],
+    "instructions": [
+      "Start standing tall with feet together.",
+      "Shift weight onto one foot.",
+      "Place the sole of the other foot on the inner thigh.",
+      "Press hands together in prayer position at chest.",
+      "Raise arms overhead with palms touching.",
+      "Keep gaze forward and hold."
+    ],
+    "common_mistakes": [
+      "Not aligning the hips",
+      "Knee not pointing forward",
+      "Shoulders not relaxed"
+    ],
+    "tips": [
+      "Engage your core",
+      "Keep your breathing steady",
+      "Focus on a fixed point to maintain balance"
+    ]
+  },
+  {
+    "id": "1",
+    "english_name": "Warrior One",
+    "sanskrit_name_adapted": "Virabhadrasana One",
+    "sanskrit_name": "Vīrabhadrāsana I",
+    "pose_description": "Warrior One Pose is a standing posture that stretches the chest, lungs, and shoulders while strengthening the legs, back, and arms.",
+    "pose_benefits": [
+      "Stretches the chest, lungs, shoulders, neck, belly and groin (psoas).",
+      "Strengthens the shoulders, arms and back muscles.",
+      "Strengthens and stretches the thighs, calves and ankles."
+    ],
+    "image": "/assets/images/warrior i.jpeg",
+    "categories": ["Standing", "Backbends"],
+    "instructions": [
+      "Start in a wide stance, feet aligned.",
+      "Turn back foot 60 degrees forward.",
+      "Bend front knee 90 degrees over ankle.",
+      "Square hips forward.",
+      "Raise arms overhead, palms facing each other.",
+      "Lift ribcage and tuck pelvis.",
+      "Gaze forward and hold."
+    ],
+    "common_mistakes": [
+      "Back heel not grounded",
+      "Front knee collapsing inward",
+      "Arching the lower back excessively"
+    ],
+    "tips": [
+      "Engage your core",
+      "Press into the back heel",
+      "Keep your hips squared to the front"
+    ]
+  },
+  {
+    "id": "2",
+    "english_name": "Warrior Two",
+    "sanskrit_name_adapted": "Virabhadrasana Two",
+    "sanskrit_name": "Vīrabhadrāsana II",
+    "pose_description": "Warrior Two Pose is a standing posture that strengthens and stretches the legs, groin, and chest while improving stamina and focus.",
+    "pose_benefits": [
+      "Strengthens and stretches the legs and ankles.",
+      "Stretches the groin, chest, lungs, and shoulders.",
+      "Stimulates abdominal organs.",
+      "Increases stamina.",
+      "Relieves backaches, especially through the second trimester of pregnancy.",
+      "Therapeutic for carpal tunnel syndrome, flat feet, infertility, osteoporosis, and sciatica."
+    ],
+    "image": "/assets/images/warrior ii.jpeg",
+    "categories": ["Standing"],
+    "instructions": [
+      "Start in a wide stance, feet aligned.",
+      "Turn back foot 60 degrees forward.",
+      "Bend front knee 90 degrees over ankle.",
+      "Extend arms out to sides, shoulder height.",
+      "Rotate thighs outward.",
+      "Tuck pelvis and lift ribcage.",
+      "Gaze over front fingers and hold."
+    ],
+    "common_mistakes": [
+      "Front knee collapsing inward",
+      "Back arm sagging",
+      "Torso leaning forward"
+    ],
+    "tips": [
+      "Engage your core",
+      "Keep your arms at shoulder height",
+      "Distribute your weight evenly between both legs"
+    ]
+  },
+  {
+    "id": "3",
+    "english_name": "Chair",
+    "sanskrit_name_adapted": "Utkatasana",
+    "sanskrit_name": "Utkaṭāsana",
+    "pose_description": "Chair Pose is a strengthening posture that works the lower body, core, and upper body while improving stamina and focus.",
+    "pose_benefits": [
+      "Strengthens the ankles, thighs, calves, and spine.",
+      "Stretches shoulders and chest.",
+      "Stimulates the abdominal organs, diaphragm, and heart.",
+      "Reduces flat feet.",
+      "Energizes the entire body."
+    ],
+    "image": "/assets/images/chair.jpeg",
+    "categories": ["Standing", "Strengthening"],
+    "instructions": [
+      "Start standing with feet together.",
+      "Lift toes and root feet into the earth.",
+      "Bend knees, weight on heels.",
+      "Tuck pelvis and lift ribcage.",
+      "Raise arms overhead, biceps by ears.",
+      "Gaze forward and hold."
+    ],
+    "common_mistakes": [
+      "Knees going past toes",
+      "Back arching",
+      "Shoulders lifted"
+    ],
+    "tips": [
+      "Keep weight in your heels",
+      "Engage your core",
+      "Relax your shoulders"
+    ]
+  },
+  {
+    "id": "4",
+    "english_name": "Mountain",
+    "sanskrit_name_adapted": "Tadasana",
+    "sanskrit_name": "Tāḍāsana",
+    "pose_description": "Mountain Pose is a foundational posture that improves posture and balance while strengthening the legs and core.",
+    "pose_benefits": [
+      "Improves posture and balance.",
+      "Strengthens thighs, knees, and ankles.",
+      "Firms abdomen and buttocks.",
+      "Relieves sciatica."
+    ],
+    "image": "/assets/images/mountain pose.jpeg",
+    "categories": ["Standing"],
+    "instructions": [
+      "Stand with feet together, big toes touching.",
+      "Distribute weight evenly on both feet.",
+      "Lift thighs, keep pelvis neutral.",
+      "Relax shoulders, arms at sides.",
+      "Lift chest and gaze forward.",
+      "Hold the position."
+    ],
+    "common_mistakes": [
+      "Locking the knees",
+      "Shoulders tense",
+      "Weight unevenly distributed"
+    ],
+    "tips": [
+      "Engage your thighs",
+      "Keep your breathing steady",
+      "Distribute weight evenly on both feet"
+    ]
+  },
+  {
+    "id": "5",
+    "english_name": "Goddess",
+    "sanskrit_name_adapted": "Utkata Konasana",
+    "sanskrit_name": "Utkaṭa Koṇāsana",
+    "pose_description": "Goddess Pose is a strengthening posture that targets the lower body, core, and upper body while improving balance and focus.",
+    "pose_benefits": [
+      "Strengthens the legs, glutes, core, and upper body.",
+      "Stretches the hips, chest, and shoulders.",
+      "Improves balance and focus."
+    ],
+    "image": "/assets/images/goddess pose.jpeg",
+    "categories": ["Standing", "Strengthening"],
+    "instructions": [
+      "Stand with feet wide apart, toes outward.",
+      "Bend knees to 90 degrees, thighs parallel.",
+      "Keep pelvis neutral and chest lifted.",
+      "Bend elbows, forearms parallel to ground.",
+      "Place palms forward or in prayer position.",
+      "Gaze forward and hold."
+    ],
+    "common_mistakes": [
+      "Knees collapsing inward",
+      "Arching the lower back",
+      "Shoulders lifted"
+    ],
+    "tips": [
+      "Engage your core",
+      "Press your knees outward",
+      "Keep your chest lifted"
+    ]
+  }
+]

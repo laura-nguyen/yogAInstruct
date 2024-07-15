@@ -10,7 +10,7 @@
       "Improves flexibility in the hips and knees.",
       "Improves balance."
     ],
-    "image": "src/assets/images/tree pose.jpeg",
+    "image": "/assets/images/tree pose.jpeg",
     "categories": ["Standing", "Balancing"],
     "instructions": [
       "Start standing tall with feet together.",
@@ -42,7 +42,7 @@
       "Strengthens the shoulders, arms and back muscles.",
       "Strengthens and stretches the thighs, calves and ankles."
     ],
-    "image": "src/assets/images/warrior i.jpeg",
+    "image": "/assets/images/warrior i.jpeg",
     "categories": ["Standing", "Backbends"],
     "instructions": [
       "Start in a wide stance, feet aligned.",
@@ -78,7 +78,7 @@
       "Relieves backaches, especially through the second trimester of pregnancy.",
       "Therapeutic for carpal tunnel syndrome, flat feet, infertility, osteoporosis, and sciatica."
     ],
-    "image": "src/assets/images/warrior ii.jpeg",
+    "image": "/assets/images/warrior ii.jpeg",
     "categories": ["Standing"],
     "instructions": [
       "Start in a wide stance, feet aligned.",
@@ -113,7 +113,7 @@
       "Reduces flat feet.",
       "Energizes the entire body."
     ],
-    "image": "src/assets/images/chair.jpeg",
+    "image": "/assets/images/chair.jpeg",
     "categories": ["Standing", "Strengthening"],
     "instructions": [
       "Start standing with feet together.",
@@ -146,7 +146,7 @@
       "Firms abdomen and buttocks.",
       "Relieves sciatica."
     ],
-    "image": "src/assets/images/mountain pose.jpeg",
+    "image": "/assets/images/mountain pose.jpeg",
     "categories": ["Standing"],
     "instructions": [
       "Stand with feet together, big toes touching.",
@@ -178,7 +178,7 @@
       "Stretches the hips, chest, and shoulders.",
       "Improves balance and focus."
     ],
-    "image": "src/assets/images/goddess pose.jpeg",
+    "image": "/assets/images/goddess pose.jpeg",
     "categories": ["Standing", "Strengthening"],
     "instructions": [
       "Stand with feet wide apart, toes outward.",

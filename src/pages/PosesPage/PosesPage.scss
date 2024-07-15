@@ -14,15 +14,15 @@
     padding: 0 8rem;
     margin: 3rem auto;
   }
-}
 
-.poses__list {
-  @include tablet {
-    @include grid-layout(2, 3rem);
-  }
+  &__list {
+    @include tablet {
+      @include grid-layout(2, 3rem);
+    }
 
-  @include desktop {
-    @include grid-layout(3, 2rem);
-    margin: 3rem 0 8rem;
+    @include desktop {
+      @include grid-layout(3, 2rem);
+      margin: 3rem 0 8rem;
+    }
   }
 }
