@@ -30,11 +30,7 @@ const PoseDetails = ({ pose }) => {
       </div>
       <div className="pose-details__content">
         <div className="pose-details__content--left">
-          <img
-            className="pose-details__img"
-            src={`/${image}`}
-            alt="yoga pose"
-          />
+          <img className="pose-details__img" src={`${image}`} alt="yoga pose" />
           <h4 className="pose-details__sanskrit">
             {sanskrit_name_adapted} | {sanskrit_name}
           </h4>

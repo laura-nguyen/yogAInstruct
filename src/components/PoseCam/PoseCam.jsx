@@ -167,7 +167,7 @@ const PoseCam = ({ pose }) => {
         <div className="cam__content--right">
           <img
             className="cam__img"
-            src={`/${image}`}
+            src={`${image}`}
             alt={`${english_name} pose`}
           />
 
