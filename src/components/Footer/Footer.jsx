@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="footer__socials">
               <a
                 className="footer__github-link"
-                href="https://github.com/laura-nguyen"
+                href="https://github.com/laura-nguyen/yogAInstruct"
                 target="_blank"
               >
                 <img
